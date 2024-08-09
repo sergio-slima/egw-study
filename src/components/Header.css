@@ -1,0 +1,83 @@
+.header {
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    padding: 20px 40px;
+
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* padding: 20px 0; */
+    background: transparent;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto;     
+    padding: 0 20px; 
+  }
+  
+  .logo img {
+    height: 70px;
+
+  }
+  
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enter {
+    color: #E1E1E6;
+    border: 2px solid #04D361;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .register {
+    background-color: #04D361;
+    color: #fff;
+  }
+  
+  .enter:hover {
+    background-color: #04B455;
+  }
+  
+  .register:hover {
+    background-color: #04B455;
+  }
+  
+
+/* Media Queries para Header e Footer */
+@media (max-width: 768px) {
+    .header {
+      padding: 20px 40px;
+    }
+  
+    .header {
+      height: 40px;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      position: relative;
+    }
+  }

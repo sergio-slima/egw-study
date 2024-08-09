@@ -1,0 +1,135 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: left; /* Ajustando para alinhamento à esquerda */
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Overlay */
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .hero-left {
+    flex: 1;
+    color: #E1E1E6;
+  }
+
+  .hero-badge {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .badge-icon {
+    height: 48px;
+    margin-right: 10px;
+  }
+  
+  .badge-text {
+    color: #04D361;;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .badge-text::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 48px;
+    background-color: #E1E1E6;
+    margin-right: 8px;
+  }
+  
+  .hero-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-left p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: #E1E1E6;
+  }
+  
+  .hero-buttons .btn {
+    background-color: #04D361;
+    color: #E1E1E6;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-buttons .btn:hover {
+    background-color: #04B455;
+  }
+  
+  .hero-buttons .btn-secondary {
+    color: #E1E1E6;
+    border: 2px solid #04D361;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .hero-buttons .btn-secondary:hover {
+    color: #04D361;
+    border-color: #04D361;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-illustration {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+      margin-top: 50px;
+    }
+  
+    .hero-left, .hero-right {
+      width: 100%;
+    }
+  
+    .hero-illustration {
+      width: 70%;
+    }
+  }

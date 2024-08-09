@@ -1,38 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: #E1E1E6;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Estilos para telas menores que 768px de largura */
+  
+  .hero-content {
+    flex-direction: column; /* Empilha as colunas em vez de exibi-las lado a lado */
+    padding: 0 15px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .hero-left, .hero-right {
+    flex: 1;
+    width: 100%; /* Largura total para cada coluna */
+    text-align: center; /* Centraliza o texto */
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Botões empilhados */
+    margin-top: 20px;
+  }
+
+  .hero-buttons .btn, .hero-buttons .btn-secondary {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero-illustration {
+    max-width: 50%; 
+    margin-top: 20px;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .feature {
+    margin-bottom: 20px;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
+
+  .footer {
+    padding: 20px 15px;
   }
 }
