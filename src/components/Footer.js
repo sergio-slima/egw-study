@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import icon from '../assets/icon.png'; // Substitua com o caminho correto para sua logo
+import icon from '../assets/logo.png'; // Substitua com o caminho correto para sua logo
 
 function Footer() {
   return (

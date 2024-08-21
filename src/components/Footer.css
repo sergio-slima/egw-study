@@ -2,19 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 
-  /* padding: 40px 20px; */
-  background: transparent;
+  background: #000;
   text-align: center;
-  position: absolute;
   z-index: 10;
   width: 100%;
   bottom: 0;
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -22,8 +20,8 @@
 }
 
 .footer-logo {
-  height: 120px; 
-  margin-bottom: 20px;
+  height: 4.5rem; 
+  margin-bottom: 1.25rem;  
 }
 
 .footer-copyright {
@@ -33,10 +31,10 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 20px 15px;
+    padding: 1.25rem 1rem;
   }
 
   .footer-logo {
-    height: 60px;
+    height: 2.5rem;
   }
 }

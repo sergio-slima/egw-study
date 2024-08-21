@@ -1,8 +1,8 @@
 .hero-features {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    max-width: 600px;
+    margin-top: 2.5rem;
+    max-width: 37.5rem;
   }
   
   .feature {
@@ -12,12 +12,18 @@
   }
   
   .feature-icon {
-    height: 24px;
-    margin-right: 10px;
+    height: 1.5rem;
+    margin-right: 0.625rem;
   }
   
   .feature-text {
     font-size: 1rem;
     color: #E1E1E6;
+  }
+
+  @media (max-width: 768px) {
+    .feature-text {
+      font-size: 0.75rem;
+    }
   }
   
