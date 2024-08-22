@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer'; 
 import ForWho from './components/ForWho';
 import Certificate from './components/Certificate';
+import SignCard from './components/SignCard';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <ForWho />
         <Certificate />
+        <SignCard />
       </main>
       <Footer /> 
     </div>

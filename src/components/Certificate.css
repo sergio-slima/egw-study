@@ -1,4 +1,4 @@
-.certificate-section {
+ .certificate-section {
     background-color: #080707;
     padding: 5rem 1.25rem;
     text-align: center;
@@ -72,7 +72,7 @@
   
   .certificate-item {
     background: #121214;
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -80,21 +80,11 @@
   
   .item-title {
     display: flex;
-    font-size: 1rem;    
+    font-size: 1.5rem;    
     font-weight: 400;
     margin-bottom: 10px;
     color: #04D361; 
     align-items: self-start;
-  }
-
-  .certificate-right {
-    width: 100%; /* w-full */
-  }
-
-  @media (min-width: 1024px) {
-    .certificate-right {
-        width: 50%; /* lg:w-1/2 */
-    }
   }
   
   .item-description {
@@ -136,6 +126,50 @@
   @media (max-width: 480px) {
     .certificate-images img {
       width: 100%; /* Ocupa toda a largura da tela em telas muito pequenas */
+    }
+  }
+
+  .certificate-right {
+    width: 100%; /* w-full */
+  }
+
+  @media (min-width: 1024px) {
+    .certificate-right {
+        width: 50%; /* lg:w-1/2 */
+    }
+  }
+
+  .item-certificate {
+    height: 515px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .item-certificate img {
+    height: 500px;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .certificate-container span {
+      font-size: 1rem;
+    }
+  
+    .certificate-container h3 {
+      font-size: 2rem;
+    }
+  
+    .certificate-container h4 {
+      font-size: 1rem;
+    }
+
+    .certificate-container p {
+      font-size: 1rem;
+    }
+
+    .item-certificate img {
+      height: 350px;
+      margin-top: 1rem;
     }
   }
   

@@ -4,6 +4,8 @@ import './Certificate.css';
 
 import SkillsCarousel from './SkillsCarousel';
 
+import imgCertificate from '../assets/certificado.png'
+
 function Certificate() {
   return (
     <section className="certificate-section">
@@ -15,7 +17,8 @@ function Certificate() {
         <div className="certificate-grid">
           <div className='certificate-left'>
             <div className="certificate-item know">            
-              <h4 className="item-title">Conhecimentos das Profecias</h4>
+              <h4 className="item-title">Domínio das Profecias</h4>
+              <p>Conhecimentos valiosos dos livros da Série Conflito que irão enriquecer sua jornada espiritual</p>
               <div className='item-books'>
                 <SkillsCarousel />
               </div>
@@ -25,6 +28,10 @@ function Certificate() {
           <div className='certificate-right'>
             <div className="certificate-item">            
               <h4 className="item-title">Certificado de Conclusão</h4>
+              <p>Certificação reconhecida para destacar seus conhecimentos espirituais e enriquecer sua trajetória de crescimento pessoal</p>
+              <div className='item-certificate'>
+                <img src={imgCertificate} alt='Certificado de conclusão' />
+              </div>
             </div>
           </div>
         </div>
