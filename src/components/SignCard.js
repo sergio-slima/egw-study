@@ -15,8 +15,8 @@ function SignCard() {
               src={logoIcon} 
               alt="Discover" 
               className="Logo" 
-              width="55" 
-              height="55" 
+              width="64" 
+              height="64" 
             />
             <h3 className="discover-title">
               Inicie seus estudos nos livros da Série Conflito agora mesmo

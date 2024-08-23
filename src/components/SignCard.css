@@ -12,7 +12,29 @@
     background-image: url('../assets/lines.png');
     border-radius: 10px;
     padding: 24px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    z-index: 1; /* Coloca o card na frente do brilho */
+    
+    /* Estilos de sombra para criar o efeito de brilho */
+    box-shadow: 0px 0px 40px rgba(4, 180, 85, 0.5), /* Sombra suave com tom verde */
+              0px 0px 80px rgba(4, 180, 85, 0.3), /* Sombra mais espalhada */
+              0px 0px 120px rgba(4, 180, 85, 0.2); /* Sombra ainda mais difusa */
+  }
+
+  /* Adicionando brilho extra ao redor do card */
+  .discover-card-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    background: radial-gradient(circle, rgba(130, 87, 229, 0.2), transparent 60%);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(60px);
+    z-index: 0; /* Coloca o brilho atrás do card */
   }
   
   /* Flexbox para organizar o conteúdo */
@@ -21,6 +43,7 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    z-index: 2; /* Conteúdo na frente */
   }
   
   @media (min-width: 1024px) {
