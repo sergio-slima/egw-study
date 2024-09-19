@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+
 import './Header.css';
 
 import logo from '../assets/logo.png'; 
@@ -12,17 +13,20 @@ function Header() {
           <img src={logo} alt="Logo" />
         </a>
         <div className="nav-buttons">
-          <a href="#" className="button enter">
-            <img 
-              src={userIcon} 
-              alt="User Icon" 
-              className="button-icon" 
-              width="18" 
-              height="18" 
-            />
-            ENTRAR
-          </a>
-          <a href="#" className="button register">CRIAR CONTA</a>
+            <a href="/sign-in" className="button enter">
+              <img 
+                src={userIcon} 
+                alt="User Icon" 
+                className="button-icon" 
+                width="18" 
+                height="18" 
+              />
+              ENTRAR
+            </a>
+
+            <a href="/sign-up" className="button register">
+              CRIAR CONTA
+            </a>
         </div>
       </nav>
     </header>

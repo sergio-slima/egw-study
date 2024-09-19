@@ -25,7 +25,7 @@ function SignCard() {
 
           {/* Botão de Criar Conta */}
           <a 
-            href="#" 
+            href="/sign-up" 
             className="discover-button"
           >
             <img 

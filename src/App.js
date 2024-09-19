@@ -12,14 +12,14 @@ import SignCard from './components/SignCard';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <ForWho />
-        <Certificate />
-        <SignCard />
-      </main>
-      <Footer /> 
+        <Header />
+        <main>
+          <Hero />
+          <ForWho />
+          <Certificate />
+          <SignCard />
+        </main>
+        <Footer /> 
     </div>
   );
 }
