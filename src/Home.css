@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+    margin-top: 150px;
+    padding: 20px 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Borda suave */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.userName {
+    display: flex;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+
+.progress-container {
+margin-top: 20px;
+width: 70%;
+}
+
+.progress-container p {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+width: 100%;
+height: 30px;
+background-color: #e0e0e0;
+border-radius: 5px;
+overflow: hidden;
+}
+
+.progress {
+height: 100%;
+background-color: #4caf50;
+text-align: center;
+color: white;
+font-weight: bold;
+line-height: 30px;
+transition: width 0.4s ease;
+}
+

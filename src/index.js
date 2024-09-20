@@ -6,7 +6,7 @@ import Home from './Home';
 
 import './index.css';
 
-import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut, SignIn, SignUp } from '@clerk/clerk-react'
+import { ClerkProvider, SignedIn, SignedOut, SignIn, SignUp } from '@clerk/clerk-react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 
 const PUBLISHABLE_KEY = 'pk_test_ZW1pbmVudC1nbnUtODYuY2xlcmsuYWNjb3VudHMuZGV2JA' //process.env.VITE_CLERK_PUBLISHABLE_KEY
