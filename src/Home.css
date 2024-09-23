@@ -27,8 +27,8 @@ h1 {
 }
 
 .progress-container {
-margin-top: 20px;
-width: 70%;
+margin-top: 10px;
+width: 90%;
 }
 
 .progress-container p {
@@ -53,3 +53,12 @@ line-height: 30px;
 transition: width 0.4s ease;
 }
 
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}

@@ -9,7 +9,7 @@ import './index.css';
 import { ClerkProvider, SignedIn, SignedOut, SignIn, SignUp } from '@clerk/clerk-react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 
-const PUBLISHABLE_KEY = 'pk_test_ZW1pbmVudC1nbnUtODYuY2xlcmsuYWNjb3VudHMuZGV2JA' //process.env.VITE_CLERK_PUBLISHABLE_KEY
+const PUBLISHABLE_KEY = 'pk_test_ZW1pbmVudC1nbnUtODYuY2xlcmsuYWNjb3VudHMuZGV2JA';
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
