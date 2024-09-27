@@ -1,0 +1,75 @@
+.book-page-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.content.expanded {
+  width: 100%;
+}
+
+.toggle-menu-btn {
+  padding: 10px;
+  margin: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.module-list {
+  list-style: none;
+  padding: 0;
+}
+
+.module-header {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.down {
+  transform: rotate(90deg);
+}
+
+.sub-options {
+  padding-left: 20px;
+}
+
+.sub-option {
+  padding: 8px;
+}
+
+.back-button {
+  padding: 10px;
+  background-color: #ff3b3b;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}

@@ -1,0 +1,1380 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "modules": [
+          {
+            "moduleTitle": "Module 1",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Big Bang",
+                "content": "An exploration into the origins of the universe, the Big Bang theory explains the beginning of space, time, and matter.",
+                "timeline": [
+                  "13.8 billion years ago: The Big Bang occurs.",
+                  "After 10^-43 seconds: First particles begin to form.",
+                  "After 3 minutes: Protons and neutrons combine to form atomic nuclei."
+                ],
+                "image": "big_bang.jpg"
+              },
+              {
+                "title": "Chapter 2: Formation of Galaxies",
+                "content": "This chapter covers the formation of galaxies and the process of star formation.",
+                "timeline": [
+                  "1 billion years after Big Bang: First galaxies start to form.",
+                  "3 billion years: The Milky Way begins to take shape.",
+                  "10 billion years: Star formation peaks."
+                ],
+                "image": "galaxies.jpg"
+              },
+              {
+                "title": "Chapter 3: Life of a Star",
+                "content": "An in-depth look at the life cycle of stars, from birth to supernova.",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],
+                "image": "star_life.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 2",
+            "chapters": [
+              {
+                "title": "Chapter 1: Dark Matter and Energy",
+                "content": "A deep dive into the mysterious forces shaping the universe.",
+                "timeline": [
+                  "1930s: Discovery of dark matter.",
+                  "1998: Discovery of dark energy.",
+                  "Present: Ongoing research on dark matter and energy."
+                ],
+                "image": "dark_matter.jpg"
+              },
+              {
+                "title": "Chapter 2: Cosmic Background Radiation",
+                "content": "The remnants of the Big Bang still visible in the universe today.",
+                "timeline": [
+                  "1965: Discovery of cosmic microwave background radiation.",
+                  "CMB: Proof of the universe's hot, dense origin.",
+                  "Present: Studies of fluctuations in the CMB."
+                ],
+                "image": "cosmic_radiation.jpg"
+              },
+              {
+                "title": "Chapter 3: Fate of the Universe",
+                "content": "Various theories about how the universe might end.",
+                "timeline": [
+                  "Heat death: Gradual entropy increase.",
+                  "Big Crunch: Universe collapses in on itself.",
+                  "Big Rip: Universe tears apart."
+                ],
+                "image": "fate_universe.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Bacabau",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 3",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Space Race",
+                "content": "A history of humanity’s quest to reach space.",
+                "timeline": [
+                  "1957: Launch of Sputnik 1.",
+                  "1969: Apollo 11 lands on the moon.",
+                  "Present: Private companies join space exploration."
+                ],
+                "image": "space_race.jpg"
+              },
+              {
+                "title": "Chapter 2: Mars Exploration",
+                "content": "Current missions and plans for future human exploration of Mars.",
+                "timeline": [
+                  "1976: Viking 1 lands on Mars.",
+                  "2004: Rovers Spirit and Opportunity land on Mars.",
+                  "Present: Ongoing Mars missions and future plans."
+                ],
+                "image": "mars.jpg"
+              },
+              {
+                "title": "Chapter 3: The Future of Space Travel",
+                "content": "Looking ahead to new technologies and the possibility of interstellar travel.",
+                "timeline": [
+                  "Present: Development of reusable rockets.",
+                  "Future: Space tourism and colonization of planets.",
+                  "Far future: Possibility of interstellar travel."
+                ],
+                "image": "future_space_travel.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Buriticupu",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "modules": [
+          {
+            "moduleTitle": "Module 1",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Black House",
+                "content": "An black house into the origins of the universe, the Big Bang theory explains the beginning of space, time, and matter.",
+                "timeline": [
+                  "13.8 billion years ago: The Black House occurs.",
+                  "After 10^-43 seconds: First particles begin to form.",
+                  "After 3 minutes: Protons and neutrons combine to form atomic nuclei."
+                ],
+                "image": "big_bang.jpg"
+              },
+              {
+                "title": "Chapter 2: Bike of Galaxies",
+                "content": "This chapter covers the bike of galaxies and the process of star formation.",
+                "timeline": [
+                  "1 billion years after Big Bang: Bike galaxies start to form.",
+                  "3 billion years: The Milky Way begins to take shape.",
+                  "10 billion years: Star formation peaks."
+                ],
+                "image": "galaxies.jpg"
+              },
+              {
+                "title": "Chapter 3: Life of a Bier",
+                "content": "An in-depth bier at the life cycle of stars, from birth to supernova.",
+                "timeline": [
+                  "Nebula formation: Birthplace of bier.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],
+                "image": "star_life.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 2",
+            "chapters": [
+              {
+                "title": "Chapter 1: Car Matter and Energy",
+                "content": "A car dive into the mysterious forces shaping the universe.",
+                "timeline": [
+                  "1930s: Discovery of car matter.",
+                  "1998: Discovery of dark energy.",
+                  "Present: Ongoing research on dark matter and energy."
+                ],
+                "image": "dark_matter.jpg"
+              },
+              {
+                "title": "Chapter 2: cat Background Radiation",
+                "content": "The cat of the Big Bang still visible in the universe today.",
+                "timeline": [
+                  "1965: Discovery of cat microwave background radiation.",
+                  "CMB: Proof of the universe's hot, dense origin.",
+                  "Present: Studies of fluctuations in the CMB."
+                ],
+                "image": "cosmic_radiation.jpg"
+              },
+              {
+                "title": "Chapter 3: Cisne of the Universe",
+                "content": "Cisne theories about how the universe might end.",
+                "timeline": [
+                  "Heat death: Cisne entropy increase.",
+                  "Big Crunch: Universe collapses in on itself.",
+                  "Big Rip: Universe tears apart."
+                ],
+                "image": "fate_universe.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 3",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Dog Race",
+                "content": "A dog of humanity’s quest to reach space.",
+                "timeline": [
+                  "1957: Dog of Sputnik 1.",
+                  "1969: Apollo 11 lands on the moon.",
+                  "Present: Private companies join space exploration."
+                ],
+                "image": "space_race.jpg"
+              },
+              {
+                "title": "Chapter 2: Duck Exploration",
+                "content": "Current duck and plans for future human exploration of Mars.",
+                "timeline": [
+                  "1976: Viking 1 duck on Mars.",
+                  "2004: Rovers Spirit and Opportunity land on Mars.",
+                  "Present: Ongoing Mars missions and future plans."
+                ],
+                "image": "mars.jpg"
+              },
+              {
+                "title": "Chapter 3: The Disc of Space Travel",
+                "content": "Disc ahead to new technologies and the possibility of interstellar travel.",
+                "timeline": [
+                  "Present: Disc of reusable rockets.",
+                  "Future: Space tourism and colonization of planets.",
+                  "Far future: Possibility of interstellar travel."
+                ],
+                "image": "future_space_travel.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "modules": [
+          {
+            "moduleTitle": "Module 1",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Three Bang",
+                "content": "An Three into the origins of the universe, the Big Bang theory explains the beginning of space, time, and matter.",
+                "timeline": [
+                  "13.8 billion years ago: Three Three Bang occurs.",
+                  "After 10^-43 seconds: First particles begin to form.",
+                  "After 3 minutes: Protons and neutrons combine to form atomic nuclei."
+                ],
+                "image": "big_bang.jpg"
+              },
+              {
+                "title": "Chapter 2: Formation of Three",
+                "content": "This Three covers the formation of galaxies and the process of star formation.",
+                "timeline": [
+                  "1 billion years after Three Bang: First galaxies start to form.",
+                  "3 billion years: The Milky Way begins to take shape.",
+                  "10 billion years: Star formation peaks."
+                ],
+                "image": "galaxies.jpg"
+              },
+              {
+                "title": "Chapter 3: Three of a Star",
+                "content": "An in-depth Three at the life cycle of stars, from birth to supernova.",
+                "timeline": [
+                  "Nebula formation: Three of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],
+                "image": "star_life.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 2",
+            "chapters": [
+              {
+                "title": "Chapter 1: Dark Three and Energy",
+                "content": "A Three dive into the mysterious forces shaping the universe.",
+                "timeline": [
+                  "1930s: Three of dark matter.",
+                  "1998: Discovery of dark energy.",
+                  "Present: Ongoing research on dark matter and energy."
+                ],
+                "image": "dark_matter.jpg"
+              },
+              {
+                "title": "Chapter 2: Cosmic Three Radiation",
+                "content": "The Three of the Big Bang still visible in the universe today.",
+                "timeline": [
+                  "1965: Three of cosmic microwave background radiation.",
+                  "CMB: Proof of the universe's hot, dense origin.",
+                  "Present: Studies of fluctuations in the CMB."
+                ],
+                "image": "cosmic_radiation.jpg"
+              },
+              {
+                "title": "Chapter 3: Three of the Universe",
+                "content": "Three theories about how the universe might end.",
+                "timeline": [
+                  "Heat death: Three entropy increase.",
+                  "Big Crunch: Universe collapses in on itself.",
+                  "Big Rip: Universe tears apart."
+                ],
+                "image": "fate_universe.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 3",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Three Race",
+                "content": "A history of Three’s quest to reach space.",
+                "timeline": [
+                  "1957: Three of Sputnik 1.",
+                  "1969: Apollo 11 lands on the moon.",
+                  "Present: Private companies join space exploration."
+                ],
+                "image": "space_race.jpg"
+              },
+              {
+                "title": "Chapter 2: Three Exploration",
+                "content": "Three missions and plans for future human exploration of Mars.",
+                "timeline": [
+                  "1976: Viking 1 lands on Three.",
+                  "2004: Rovers Spirit and Opportunity land on Mars.",
+                  "Present: Ongoing Three missions and future plans."
+                ],
+                "image": "mars.jpg"
+              },
+              {
+                "title": "Chapter 3: The Three of Space Travel",
+                "content": "Looking ahead to new technologies and the possibility of interstellar travel.",
+                "timeline": [
+                  "Present: Three of reusable rockets.",
+                  "Future: Space tourism and colonization of planets.",
+                  "Far future: Possibility of interstellar travel."
+                ],
+                "image": "future_space_travel.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "modules": [
+          {
+            "moduleTitle": "Module 1",
+            "chapters": [
+              {
+                "title": "Chapter 1: The For Numeric Bang",
+                "content": "An For Numeric into the origins of the universe, the Big Bang theory explains the beginning of space, time, and matter.",
+                "timeline": [
+                  "13.8 billion years ago: The Big Bang occurs.",
+                  "After 10^-43 seconds: For Numeric particles begin to form.",
+                  "After 3 minutes: Protons and neutrons combine to form atomic nuclei."
+                ],
+                "image": "big_bang.jpg"
+              },
+              {
+                "title": "Chapter 2: For Numeric of Galaxies",
+                "content": "This chapter covers the For Numeric of galaxies and the process of star formation.",
+                "timeline": [
+                  "1 billion years after Big Bang: First galaxies start to form.",
+                  "3 billion years: The Milky Way begins to take shape.",
+                  "10 billion years: Star For Numeric peaks."
+                ],
+                "image": "galaxies.jpg"
+              },
+              {
+                "title": "Chapter 3: For Numeric of a Star",
+                "content": "An in-depth For Numeric at the life cycle of stars, from birth to supernova.",
+                "timeline": [
+                  "Nebula formation: For Numeric of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],
+                "image": "star_life.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 2: The For Numeric of the Universe",
+            "chapters": [
+              {
+                "title": "Chapter 1: Dark For Numeric and Energy",
+                "content": "A For Numeric dive into the mysterious forces shaping the universe.",
+                "timeline": [
+                  "1930s: For Numeric of dark matter.",
+                  "1998: Discovery of dark energy.",
+                  "Present: Ongoing research on dark matter and energy."
+                ],
+                "image": "dark_matter.jpg"
+              },
+              {
+                "title": "Chapter 2: For Numeric Background Radiation",
+                "content": "The For Numeric of the Big Bang still visible in the universe today.",
+                "timeline": [
+                  "1965: For Numeric of cosmic microwave background radiation.",
+                  "CMB: For Numeric of the universe's hot, dense origin.",
+                  "Present: Studies of fluctuations in the CMB."
+                ],
+                "image": "cosmic_radiation.jpg"
+              },
+              {
+                "title": "Chapter 3: For Numeric of the Universe",
+                "content": "For Numeric theories about how the universe might end.",
+                "timeline": [
+                  "Heat death: For Numeric entropy increase.",
+                  "Big Crunch: Universe collapses in on itself.",
+                  "Big Rip: Universe tears apart."
+                ],
+                "image": "fate_universe.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 3: For Numeric Exploration",
+            "chapters": [
+              {
+                "title": "Chapter 1: The For Numeric Race",
+                "content": "A For Numeric of humanity’s quest to reach space.",
+                "timeline": [
+                  "1957: For Numeric of Sputnik 1.",
+                  "1969: Apollo 11 lands on the moon.",
+                  "Present: Private companies join space exploration."
+                ],
+                "image": "space_race.jpg"
+              },
+              {
+                "title": "Chapter 2: For Numeric Exploration",
+                "content": "For Numeric missions and plans for future human exploration of Mars.",
+                "timeline": [
+                  "1976: For Numeric 1 lands on Mars.",
+                  "2004: Rovers Spirit and Opportunity land on Mars.",
+                  "Present: Ongoing Mars missions and future plans."
+                ],
+                "image": "mars.jpg"
+              },
+              {
+                "title": "Chapter 3: The For Numeric of Space Travel",
+                "content": "Looking ahead to new technologies and the possibility of interstellar travel.",
+                "timeline": [
+                  "Present: For Numeric of reusable rockets.",
+                  "Future: Space tourism and colonization of planets.",
+                  "Far future: Possibility of interstellar travel."
+                ],
+                "image": "future_space_travel.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "modules": [
+          {
+            "moduleTitle": "Module 1: The Book Five of the Universe",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Book Five Bang",
+                "content": "An exploration into the origins of the universe, the Big Bang theory explains the beginning of space, time, and matter.",
+                "timeline": [
+                  "13.8 billion years ago: The Book Five Bang occurs.",
+                  "After 10^-43 seconds: First particles begin to form.",
+                  "After 3 minutes: Protons and neutrons combine to form atomic nuclei."
+                ],
+                "image": "big_bang.jpg"
+              },
+              {
+                "title": "Chapter 2: Book Five of Galaxies",
+                "content": "This chapter covers the formation of galaxies and the process of star formation.",
+                "timeline": [
+                  "1 billion years after Book Five Bang: First galaxies start to form.",
+                  "3 billion years: The Milky Way begins to take shape.",
+                  "10 billion years: Star formation peaks."
+                ],
+                "image": "galaxies.jpg"
+              },
+              {
+                "title": "Chapter 3: Book Five of a Star",
+                "content": "An in-depth Book Five at the life cycle of stars, from birth to supernova.",
+                "timeline": [
+                  "Nebula formation: Book Five of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],
+                "image": "star_life.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 2: The Book Five of the Universe",
+            "chapters": [
+              {
+                "title": "Chapter 1: Dark Book Five and Energy",
+                "content": "A deep dive into the mysterious forces shaping the universe.",
+                "timeline": [
+                  "1930s: Discovery of dark Book Five.",
+                  "1998: Discovery of dark energy.",
+                  "Present: Ongoing research on dark matter and energy."
+                ],
+                "image": "dark_matter.jpg"
+              },
+              {
+                "title": "Chapter 2: Book Five Background Radiation",
+                "content": "The remnants of the Big Bang still visible in the universe today.",
+                "timeline": [
+                  "1965: Book Five of cosmic microwave background radiation.",
+                  "CMB: Proof of the universe's hot, dense origin.",
+                  "Present: Studies of fluctuations in the CMB."
+                ],
+                "image": "cosmic_radiation.jpg"
+              },
+              {
+                "title": "Chapter 3: Fate of the Book Five",
+                "content": "Book Five theories about how the universe might end.",
+                "timeline": [
+                  "Heat death: Book Five entropy increase.",
+                  "Big Crunch: Universe collapses in on itself.",
+                  "Big Rip: Universe tears apart."
+                ],
+                "image": "fate_universe.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 3: Book Five Exploration",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Book Five Race",
+                "content": "A history of Book Five’s quest to reach space.",
+                "timeline": [
+                  "1957: Launch of Sputnik 1.",
+                  "1969: Apollo 11 lands on the moon.",
+                  "Present: Private companies join space exploration."
+                ],
+                "image": "space_race.jpg"
+              },
+              {
+                "title": "Chapter 2: Mars Book Five",
+                "content": "Book Five missions and plans for future human exploration of Mars.",
+                "timeline": [
+                  "1976: Book Five 1 lands on Mars.",
+                  "2004: Rovers Spirit and Opportunity land on Mars.",
+                  "Present: Ongoing Mars missions and future plans."
+                ],
+                "image": "mars.jpg"
+              },
+              {
+                "title": "Chapter 3: The Book Five of Space Travel",
+                "content": "Looking ahead to new technologies and the possibility of interstellar travel.",
+                "timeline": [
+                  "Present: Book Five of reusable rockets.",
+                  "Future: Space tourism and colonization of planets.",
+                  "Far future: Possibility of interstellar travel."
+                ],
+                "image": "future_space_travel.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",            
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Berlin",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          }
+        ]
+      }
+    ]
+  }
+  

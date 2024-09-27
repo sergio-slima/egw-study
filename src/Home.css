@@ -19,6 +19,7 @@ button {
 .userName {
     display: flex;
     gap: 1rem;
+    width: 50%;
 }
 
 h1 {
@@ -27,8 +28,7 @@ h1 {
 }
 
 .progress-container {
-margin-top: 10px;
-width: 90%;
+    width: 50%;
 }
 
 .progress-container p {
@@ -60,5 +60,12 @@ transition: width 0.4s ease;
     }
     h1 {
         font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .userName {
+        width: 100%;
+    }    
+    .progress-container {
+        width: 100%;
     }
 }

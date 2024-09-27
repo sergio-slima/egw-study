@@ -2,17 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { useUser } from '@clerk/clerk-react';
 
 import Header from './components/Home/Header';
+import Books from './components/Home/Books';
 
 import playIcon from '../src/assets/play.svg';
 
 import './Home.css';
-import Books from './components/Home/Books';
 
 function Home() {
   const { user } = useUser();
   const [dailyCount, setDailyCount] = useState(0);
 
-  // const [user, setUser] = useState(null); // Estado para armazenar o usuário logado
   const [progress, setProgress] = useState(0); // Progresso do estudo
 
   useEffect(() => {
@@ -47,11 +46,7 @@ function Home() {
   }, []);
 
   // Aqui pegamos o usuário logado pelo Clerk
-  useEffect(() => {
-    // Simulando pegar o usuário logado (Clerk)
-    // const loggedInUser = { firstName: userFullName.fullName }; // Pega o nome do usuário
-    // setUser(loggedInUser);
-    
+  useEffect(() => {    
     // Simula progresso de estudos (pode vir de um banco de dados no futuro)
     const savedProgress = localStorage.getItem('studyProgress');
     setProgress(savedProgress ? Number(savedProgress) : 0);

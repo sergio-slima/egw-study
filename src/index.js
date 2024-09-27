@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import App from './App'
 import Home from './Home';
+import BookPage from './BookPage';
 
 import './index.css';
 
@@ -27,6 +28,9 @@ const ClerkWithRoutes = () => {
     >
       <Routes>
         <Route path='/' element={<App />} />
+        <Route path="/book/:id" element={<BookPage />} />
+        {/* <Route path="/book/:id" component={BookPage} /> */}
+
         <Route 
           path='/sign-in/*' 
           element={<SignIn redirectUrl={'/home'} routing='path' path='/sign-in' />}
