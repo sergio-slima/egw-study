@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import './BookPage.css'; // Separando o CSS
 import menuIcon from '../src/assets/menu.svg';
 import closeIcon from '../src/assets/close.svg';
+import logo from '../src/assets/logo.png'; 
 
 const BookPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
@@ -110,10 +111,13 @@ const BookPage = () => {
   return (
     <div className="book-page-container">
       <div className={`sidebar ${isMenuOpen ? 'open' : 'closed'}`}>
-        <button className="toggle-menu-btn" onClick={handleToggleMenu}>
-          {isMenuOpen ? <img src={closeIcon} alt="Fechar Menu" /> : <img src={menuIcon} alt="Abrir Menu" />}
-        </button>
-        <div className="logo">Logo</div>
+        <div className='toggle-menu'>
+          <div className="logo"><img src={logo} alt="Logo" /></div>
+          
+          <button className="toggle-menu-btn" onClick={handleToggleMenu}>
+            {isMenuOpen ? <img src={closeIcon} alt="Fechar Menu" /> : <img src={menuIcon} alt="Abrir Menu" />}
+          </button>
+        </div>
 
         <aside className="module-list">
           {selectedBook.modules.map((mod, modIndex) => (
@@ -148,10 +152,15 @@ const BookPage = () => {
           <div className="chapter-content">
             <h2>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].title}</h2>
             <p>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].content}</p>
-            <img
+            <a
+              href={selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].image}
+              alt="Chapter"
+              target='_black'
+            >LEIA O CAPITULO 1 AQUI</a>
+            {/* <img
               src={`path_to_images/${selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].image}`}
               alt="Chapter"
-            />
+            /> */}
             <ul>
               {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].timeline.map((event, eventIndex) => (
                 <li key={eventIndex}>{event}</li>

@@ -7,17 +7,22 @@
             "moduleTitle": "Module 1",
             "chapters": [
               {
-                "title": "Chapter 1: The Big Bang",
-                "content": "An exploration into the origins of the universe, the Big Bang theory explains the beginning of space, time, and matter.",
+                "title": "Capítulo 1: Porque foi permitido o pecado?",
+                "content": "O primeiro capítulo do livro Patriarcas e Profetas de Ellen G. White é intitulado 'Por que o pecado foi permitido' e aborda a origem do mal no universo e o conflito entre o bem e o mal.",
                 "timeline": [
-                  "13.8 billion years ago: The Big Bang occurs.",
-                  "After 10^-43 seconds: First particles begin to form.",
-                  "After 3 minutes: Protons and neutrons combine to form atomic nuclei."
+                  "- Introdução ao Grande Conflito: O livro começa explicando que o universo de Deus era originalmente de paz e harmonia. Todos os seres criados, tanto humanos quanto anjos, viviam em perfeita obediência à vontade de Deus.",
+                  "- A criação de Lúcifer: Lúcifer, descrito como o anjo mais exaltado e belo de todos, foi criado com grandes dons de sabedoria e beleza. Ele ocupava uma posição de destaque no céu, sendo altamente honrado por todos os outros seres criados.",
+                  "- O nascimento do orgulho e da rebelião de Lúcifer: Com o tempo, Lúcifer começou a sentir inveja e insatisfação. Ele queria ocupar uma posição de igualdade com Deus e se ressentiu da autoridade divina. Este orgulho foi o primeiro pecado a surgir no universo.",
+                  "- O esforço de Deus para resgatar Lúcifer: Deus, em Seu amor, buscou resgatar Lúcifer, mostrando-lhe o erro de seu caminho. Ele tentou adverti-lo sobre as consequências da rebelião e a destruição que isso traria. No entanto, Lúcifer rejeitou a misericórdia divina.",
+                  "- Lúcifer convence outros anjos: Lúcifer conseguiu enganar um terço dos anjos do céu, convencendo-os de que sua rebelião era justa e que Deus estava sendo tirânico. Isso levou à formação de dois lados no céu: os que eram leais a Deus e os que seguiam Lúcifer.",
+                  "- A guerra no céu: Uma batalha espiritual ocorreu no céu entre as forças de Deus, lideradas por Miguel (Cristo), e as forças de Lúcifer, que foi derrotado e expulso do céu junto com seus seguidores.",
+                  "- O propósito de Deus ao permitir o pecado: O capítulo aborda a questão de por que Deus permitiu que o pecado surgisse. A liberdade de escolha é apresentada como uma característica fundamental do governo de Deus. Ele permitiu que Lúcifer se rebelasse para que o caráter de Deus e de Satanás fosse revelado a todos os seres criados.",
+                  "- Conclusão: O plano de redenção: O capítulo termina introduzindo o plano de Deus para redimir a humanidade, antecipando o conflito entre o bem e o mal que se estenderia à Terra, com a promessa de que o pecado e o sofrimento seriam finalmente derrotados. Essa é uma visão geral dos principais pontos apresentados no primeiro capítulo do livro. Ele estabelece as bases teológicas para o conflito cósmico entre o bem e o mal, que será explorado ao longo da obra."
                 ],
-                "image": "big_bang.jpg"
+                "image": "https://m.egwwritings.org/pt/book/1815.2#67"
               },
               {
-                "title": "Chapter 2: Formation of Galaxies",
+                "title": "Capítulo 2: A Criação",
                 "content": "This chapter covers the formation of galaxies and the process of star formation.",
                 "timeline": [
                   "1 billion years after Big Bang: First galaxies start to form.",
@@ -27,7 +32,7 @@
                 "image": "galaxies.jpg"
               },
               {
-                "title": "Chapter 3: Life of a Star",
+                "title": "Capítulo 3: A Tentação e a Queda",
                 "content": "An in-depth look at the life cycle of stars, from birth to supernova.",
                 "timeline": [
                   "Nebula formation: Birthplace of stars.",
@@ -41,54 +46,54 @@
             "type": "quiz",
             "questions": [
               {
-                "question": "What is the capital of France?",
+                "question": "1. Como o universo era descrito antes da rebelião de Lúcifer?",
                 "alternatives": [
-                  "Berlin",
-                  "Madrid",
-                  "Paris",
-                  "Rome"
+                  "a) Cheio de caos e desordem",
+                  "b) Pacífico e harmonioso",
+                  "c) Cheio de disputas entre anjos",
+                  "d) Governado por medo e tirania"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "2. Quem foi Lúcifer, de acordo com o primeiro capítulo do livro?",
+                "alternatives": [
+                  "a) Um ser humano",
+                  "b) Um anjo comum",
+                  "c) O anjo mais exaltado e belo de todos",
+                  "d) Um arcanjo menor que não tinha poder"
                 ],
                 "answer": 2
               },
               {
-                "question": "Which element has the atomic number 1?",
+                "question": "3. Qual foi o primeiro sentimento que surgiu em Lúcifer, levando à sua rebelião?",
                 "alternatives": [
-                  "Oxygen",
-                  "Hydrogen",
-                  "Carbon",
-                  "Helium"
+                  "a) Orgulho",
+                  "b) Ciúmes",
+                  "c) Ódio",
+                  "d) Medo"
                 ],
-                "answer": 1
+                "answer": 0
               },
               {
-                "question": "What is the largest planet in our solar system?",
+                "question": "4. Como Deus reagiu inicialmente à rebelião de Lúcifer?",
                 "alternatives": [
-                  "Earth",
-                  "Mars",
-                  "Jupiter",
-                  "Saturn"
+                  "a) Expulsou Lúcifer imediatamente do céu",
+                  "b) pediu aos anjos que o evitassem",
+                  "c) Destruiu Lúcifer no momento em que ele se rebelou",
+                  "d) Mostrou-lhe misericórdia e tentou resgatá-lo"
                 ],
-                "answer": 2
+                "answer": 3
               },
               {
-                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "question": "5. Quantos anjos Lúcifer conseguiu convencer a segui-lo?",
                 "alternatives": [
-                  "Mark Twain",
-                  "Harper Lee",
-                  "Ernest Hemingway",
-                  "F. Scott Fitzgerald"
+                  "a) Todos os anjos do céu",
+                  "b) Metade dos anjos",
+                  "c) Um quarto dos anjos",
+                  "d) Um terço dos anjos "
                 ],
-                "answer": 1
-              },
-              {
-                "question": "Which country hosted the 2016 Summer Olympics?",
-                "alternatives": [
-                  "China",
-                  "Brazil",
-                  "Russia",
-                  "United Kingdom"
-                ],
-                "answer": 1
+                "answer": 3
               }
             ]
           }
