@@ -40,6 +40,16 @@
                   "Supernova: The explosive death of a massive star."
                 ],
                 "image": "star_life.jpg"
+              },
+              {
+                "title": "Capítulo 4: A Tentação e a Queda",
+                "content": "An in-depth look at the life cycle of stars, from birth to supernova.",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],
+                "image": "star_life.jpg"
               }
             ],
             "evaluation": {
@@ -190,6 +200,96 @@
           },
           {
             "moduleTitle": "Module 3",
+            "chapters": [
+              {
+                "title": "Chapter 1: The Space Race",
+                "content": "A history of humanity’s quest to reach space.",
+                "timeline": [
+                  "1957: Launch of Sputnik 1.",
+                  "1969: Apollo 11 lands on the moon.",
+                  "Present: Private companies join space exploration."
+                ],
+                "image": "space_race.jpg"
+              },
+              {
+                "title": "Chapter 2: Mars Exploration",
+                "content": "Current missions and plans for future human exploration of Mars.",
+                "timeline": [
+                  "1976: Viking 1 lands on Mars.",
+                  "2004: Rovers Spirit and Opportunity land on Mars.",
+                  "Present: Ongoing Mars missions and future plans."
+                ],
+                "image": "mars.jpg"
+              },
+              {
+                "title": "Chapter 3: The Future of Space Travel",
+                "content": "Looking ahead to new technologies and the possibility of interstellar travel.",
+                "timeline": [
+                  "Present: Development of reusable rockets.",
+                  "Future: Space tourism and colonization of planets.",
+                  "Far future: Possibility of interstellar travel."
+                ],
+                "image": "future_space_travel.jpg"
+              }
+            ],
+            "evaluation": {
+            "type": "quiz",
+            "questions": [
+              {
+                "question": "What is the capital of France?",
+                "alternatives": [
+                  "Buriticupu",
+                  "Madrid",
+                  "Paris",
+                  "Rome"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Which element has the atomic number 1?",
+                "alternatives": [
+                  "Oxygen",
+                  "Hydrogen",
+                  "Carbon",
+                  "Helium"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "What is the largest planet in our solar system?",
+                "alternatives": [
+                  "Earth",
+                  "Mars",
+                  "Jupiter",
+                  "Saturn"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "Who wrote 'To Kill a Mockingbird'?",
+                "alternatives": [
+                  "Mark Twain",
+                  "Harper Lee",
+                  "Ernest Hemingway",
+                  "F. Scott Fitzgerald"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Which country hosted the 2016 Summer Olympics?",
+                "alternatives": [
+                  "China",
+                  "Brazil",
+                  "Russia",
+                  "United Kingdom"
+                ],
+                "answer": 1
+              }
+            ]
+          }
+          },
+          {
+            "moduleTitle": "Module 4",
             "chapters": [
               {
                 "title": "Chapter 1: The Space Race",
