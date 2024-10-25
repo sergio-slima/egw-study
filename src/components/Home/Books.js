@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import data from '../../dados.json';
 
 import './Books.css';
-import data from '../../dados.json'; // Importa o arquivo JSON com os livros e módulos
 
 import livro1 from '../../assets/1.png';
 import livro2 from '../../assets/2.png';
@@ -10,7 +10,7 @@ import livro3 from '../../assets/3.png';
 import livro4 from '../../assets/4.png';
 import livro5 from '../../assets/5.png';
 
-function Books() {
+function Books({ userId }) {
   const navigate = useNavigate();
 
   const handleBookClick = (bookId) => {
@@ -26,44 +26,37 @@ function Books() {
   ];
 
   const [unlockedBooks, setUnlockedBooks] = useState(1);
-  const [userProgress, setUserProgress] = useState(0); // Adiciona o estado para o progresso do usuário
+  const [userProgress, setUserProgress] = useState(0);
 
-  // Carregar progresso do localStorage e calcular o progresso do usuário
   useEffect(() => {
-    const completedEvaluations = JSON.parse(localStorage.getItem('completedEvaluations')) || {};
-    const totalModules = data.books.reduce((acc, book) => acc + book.modules.length, 0); // Total de módulos
+    if (!userId) return;
+
+    const completedEvaluations = JSON.parse(localStorage.getItem(`${userId}-completedEvaluations`)) || {};
+    const totalModules = data.books.reduce((acc, book) => acc + book.modules.length, 0);
     let completedModules = 0;
 
     Object.keys(completedEvaluations).forEach(bookId => {
       const evaluations = completedEvaluations[bookId];
-      completedModules += Object.keys(evaluations).length; // Contar quantas avaliações foram concluídas
+      completedModules += Object.keys(evaluations).length;
     });
 
-    const progressPercentage = Math.round((completedModules / totalModules) * 100); // Calcula a porcentagem
-    setUserProgress(progressPercentage); // Atualiza o estado com o progresso do usuário
+    const progressPercentage = Math.round((completedModules / totalModules) * 100);
+    setUserProgress(progressPercentage);
 
-    // Carrega o progresso de livros desbloqueados
-    const savedProgress = parseInt(localStorage.getItem('bookProgress'), 10) || 1;
+    const savedProgress = parseInt(localStorage.getItem(`${userId}-bookProgress`), 10) || 1;
     setUnlockedBooks(savedProgress);
-  }, []);
+  }, [userId]);
 
-  // Função para salvar progresso e desbloquear o próximo livro
   const unlockNextBook = () => {
     if (unlockedBooks < books.length) {
       const nextBook = unlockedBooks + 1;
       setUnlockedBooks(nextBook);
-      localStorage.setItem('bookProgress', nextBook);
+      localStorage.setItem(`${userId}-bookProgress`, nextBook);
     }
   };
 
   return (
     <div>
-      {/* Mostra o progresso do usuário */}
-      {/* <div className="progress-container">
-        <p>Progresso: {userProgress}%</p>
-        <progress value={userProgress} max="100"></progress>
-      </div> */}
-
       <div className="books-container">
         {books.map((book, index) => (
           <div key={book.id} className="book-item" onClick={() => index < unlockedBooks && handleBookClick(book.id)}>
@@ -80,17 +73,18 @@ function Books() {
           </div>
         ))}
       </div>
-
-      {/* Botão para desbloquear o próximo livro
-      {unlockedBooks < books.length && (
-        <div className="unlock-button-container">
-          <button className="unlock-button" onClick={unlockNextBook}>
-            Desbloquear Próximo Livro
-          </button>
-        </div>
-      )} */}
     </div>
   );
 }
 
 export default Books;
+
+
+{/* Botão para desbloquear o próximo livro
+{unlockedBooks < books.length && (
+  <div className="unlock-button-container">
+    <button className="unlock-button" onClick={unlockNextBook}>
+      Desbloquear Próximo Livro
+    </button>
+  </div>
+)} */}

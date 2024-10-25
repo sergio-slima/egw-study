@@ -1,7 +1,7 @@
 .header {
     align-items: center;
     padding: 1rem 2.5rem;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -12,16 +12,16 @@
   
   .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     align-items: center; 
-    max-width: 75rem; 
-    margin: 0 auto;     
+    /* max-width: 75rem; */
+    margin: 0 auto;      
     padding: 0 1.25rem; 
   }
   
   .logo img {
     height: 4.5rem;
-
+    display: flex;
   }
   
   .nav-buttons {
@@ -72,10 +72,12 @@
     }
 
     .logo {
+      display: flex;
       width: 4.5rem;
       height: 4.5rem;
       overflow: hidden;
       position: relative;
+      margin-right: 5px;
     }
 
     .button {

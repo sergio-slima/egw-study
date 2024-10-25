@@ -9,9 +9,11 @@ function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <a href="#" className="logo">
-          <img src={logo} alt="Logo" />
-        </a>
+        <div>
+          <a href="#" className="logo">
+            <img src={logo} alt="Logo" />
+          </a>
+        </div>
         <div className="nav-buttons">
             <a href="/sign-in" className="button enter">
               <img 

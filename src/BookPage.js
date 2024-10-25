@@ -1,59 +1,59 @@
-import React, { useState, useEffect } from 'react'; 
-import data from './dados.json'; // Importa o arquivo JSON
+import React, { useState, useEffect } from 'react';
+import data from './dados.json'; 
 import { useParams } from 'react-router-dom';
+import { useUser } from "@clerk/clerk-react"; // Obtenha o ID do usuário a partir do Clerk
 
-import './BookPage.css'; // Separando o CSS
+import './BookPage.css'; 
 
 import menuIcon from '../src/assets/menu.svg';
 import closeIcon from '../src/assets/close.svg';
 import logo from '../src/assets/logo.png'; 
 
 const BookPage = () => {
+  const { user } = useUser();
+  const userId = user ? user.id : null; // Obtenha o ID do usuário do Clerk
+
   const [isMenuOpen, setIsMenuOpen] = useState(true);
-  const [expandedModules, setExpandedModules] = useState({}); // Estado para controle dos módulos expandidos
-  const [selectedChapter, setSelectedChapter] = useState(null); // Controle do capítulo selecionado
-  const [selectedEvaluation, setSelectedEvaluation] = useState(null); // Controle da avaliação selecionada
-  const [selectedAnswers, setSelectedAnswers] = useState({}); // Respostas do usuário
-  const [score, setScore] = useState(null); // Pontuação da avaliação
-  const [completedChapters, setCompletedChapters] = useState({}); // Capítulos concluídos pelo usuário
-  const [completedEvaluations, setCompletedEvaluations] = useState({}); // Avaliações já concluídas
+  const [expandedModules, setExpandedModules] = useState({}); 
+  const [selectedChapter, setSelectedChapter] = useState(null);
+  const [selectedEvaluation, setSelectedEvaluation] = useState(null);
+  const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [score, setScore] = useState(null);
+  const [completedChapters, setCompletedChapters] = useState({});
+  const [completedEvaluations, setCompletedEvaluations] = useState({});
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Alterna a expansão/retração dos módulos
   const handleToggleModule = (moduleIndex) => {
     setExpandedModules((prev) => ({
       ...prev,
-      [moduleIndex]: !prev[moduleIndex], // Expande ou retrai o módulo
+      [moduleIndex]: !prev[moduleIndex],
     }));
   };
 
-  const { id } = useParams(); // ID do livro passado via URL
+  const { id } = useParams();
   const [selectedBook, setSelectedBook] = useState(null);
 
   useEffect(() => {
-    // Encontra o livro pelo ID
+    if (!userId) return;
+
     const book = data.books.find(book => book.id === parseInt(id));
     if (book) {
       setSelectedBook(book);
     }
-    // Carregar capítulos concluídos e avaliações do localStorage
-    const savedChapters = JSON.parse(localStorage.getItem('completedChapters')) || {};
+    
+    const savedChapters = JSON.parse(localStorage.getItem(`${userId}-completedChapters`)) || {};
     setCompletedChapters(savedChapters);
-    const savedEvaluations = JSON.parse(localStorage.getItem('completedEvaluations')) || {};
+
+    const savedEvaluations = JSON.parse(localStorage.getItem(`${userId}-completedEvaluations`)) || {};
     setCompletedEvaluations(savedEvaluations);
-  }, [id]);
+  }, [id, userId]);
 
-  // Função para selecionar um capítulo
-  const handleSelectChapter = (modIndex, chapIndex) => {
-    setSelectedChapter({ moduleIndex: modIndex, chapterIndex: chapIndex });
-    setSelectedEvaluation(null); // Limpa a avaliação quando um capítulo é selecionado
-  };
-
-  // Função para marcar capítulo como concluído
   const handleChapterComplete = (modIndex, chapIndex) => {
+    if (!userId) return;
+
     const updatedChapters = {
       ...completedChapters,
       [selectedBook.id]: {
@@ -62,16 +62,9 @@ const BookPage = () => {
       }
     };
     setCompletedChapters(updatedChapters);
-    localStorage.setItem('completedChapters', JSON.stringify(updatedChapters));
-  };
+    localStorage.setItem(`${userId}-completedChapters`, JSON.stringify(updatedChapters));
+  };  
 
-  // Função para selecionar uma avaliação
-  const handleSelectEvaluation = (modIndex) => {
-    setSelectedEvaluation(modIndex);
-    setSelectedChapter(null); // Limpa o capítulo quando uma avaliação é selecionada
-  };
-
-  // Função para submeter a avaliação
   const handleSubmitEvaluation = () => {
     const evaluation = selectedBook.modules[selectedEvaluation].evaluation;
     let correctAnswers = 0;
@@ -85,7 +78,7 @@ const BookPage = () => {
     const totalScore = correctAnswers * 2;
     setScore(totalScore);
 
-    if (totalScore >= 8) {
+    if (totalScore >= 8 && userId) {
       const updatedEvaluations = {
         ...completedEvaluations,
         [selectedBook.id]: {
@@ -94,11 +87,20 @@ const BookPage = () => {
         }
       };
       setCompletedEvaluations(updatedEvaluations);
-      localStorage.setItem('completedEvaluations', JSON.stringify(updatedEvaluations));
+      localStorage.setItem(`${userId}-completedEvaluations`, JSON.stringify(updatedEvaluations));
     }
   };
 
-  // Função para registrar a mudança de resposta em uma pergunta
+  const handleSelectChapter = (modIndex, chapIndex) => {
+    setSelectedChapter({ moduleIndex: modIndex, chapterIndex: chapIndex });
+    setSelectedEvaluation(null); 
+  };
+
+  const handleSelectEvaluation = (modIndex) => {
+    setSelectedEvaluation(modIndex);
+    setSelectedChapter(null); 
+  };
+
   const handleAnswerChange = (questionIndex, altIndex) => {
     setSelectedAnswers((prev) => ({
       ...prev,
@@ -111,18 +113,15 @@ const BookPage = () => {
     setScore(null);
   };
 
-  // Função para navegar para o próximo capítulo ou abrir a avaliação
   const handleNextChapterOrEvaluation = () => {
     const { moduleIndex, chapterIndex } = selectedChapter;
-    handleChapterComplete(moduleIndex, chapterIndex); // Marcar capítulo atual como concluído
+    handleChapterComplete(moduleIndex, chapterIndex);
 
     const nextChapterIndex = chapterIndex + 1;
 
     if (nextChapterIndex < selectedBook.modules[moduleIndex].chapters.length) {
-      // Se houver mais capítulos, abre o próximo
       setSelectedChapter({ moduleIndex, chapterIndex: nextChapterIndex });
     } else {
-      // Se não houver mais capítulos, abre a avaliação
       handleSelectEvaluation(moduleIndex);
     }
   };
@@ -135,7 +134,7 @@ const BookPage = () => {
     <div className="book-page-container">
       <div className={`sidebar ${isMenuOpen ? 'open' : 'closed'}`}>
         <div className='toggle-menu'>
-          <div className="logo"><img src={logo} alt="Logo" /></div>
+          <div className="logo-page"><img src={logo} alt="Logo" /></div>
           
           <button className="toggle-menu-btn" onClick={handleToggleMenu}>
             {isMenuOpen ? <img src={closeIcon} alt="Fechar Menu" /> : <img src={menuIcon} alt="Abrir Menu" />}
@@ -158,17 +157,15 @@ const BookPage = () => {
                           type="checkbox"
                           checked={!!completedChapters[selectedBook.id]?.[`${modIndex}-${chapIndex}`]}
                           onChange={() => handleChapterComplete(modIndex, chapIndex)}
-                        />
-                        {/* Mostrar somente 'Capítulo X' */}
-                        {`Capítulo ${chapIndex + 1}`}
+                        />                        
                       </label>
-                      <button onClick={() => handleSelectChapter(modIndex, chapIndex)}>
-                        Acessar Capítulo
+                      <button className='button-chapter' onClick={() => handleSelectChapter(modIndex, chapIndex)}>
+                        {`Capítulo ${chapIndex + 1}`}
                       </button>
                     </li>
                   ))}
-                  <li onClick={() => handleSelectEvaluation(modIndex)}>
-                    Avaliação
+                  <li className='list-evaluation' onClick={() => handleSelectEvaluation(modIndex)}>
+                    📝Avaliação
                   </li>
                 </ul>
               )}
@@ -176,7 +173,6 @@ const BookPage = () => {
           ))}
         </aside>
 
-        {/* Botão Voltar movido para baixo */}
         <div className="bottom-buttons">
           <button className="back-button" onClick={() => window.history.back()}>
             Voltar
@@ -184,7 +180,7 @@ const BookPage = () => {
         </div>
       </div>
 
-      <main className={`content ${isMenuOpen ? '' : 'expanded'}`}>
+      <main className={` content-page ${isMenuOpen ? '' : 'expanded'}`}>
         {selectedChapter ? (
           <div className="chapter-content">
             <h2>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].title}</h2>
@@ -200,11 +196,10 @@ const BookPage = () => {
               ))}
             </ul>
 
-            {/* Botão Próximo Capítulo ou Realizar Avaliação */}
             {selectedChapter.chapterIndex === selectedBook.modules[selectedChapter.moduleIndex].chapters.length - 1 ? (
-              <button onClick={handleNextChapterOrEvaluation}>Realizar Avaliação</button>
+              <button className='button-next' onClick={handleNextChapterOrEvaluation}>Realizar Avaliação</button>
             ) : (
-              <button onClick={handleNextChapterOrEvaluation}>Próximo Capítulo</button>
+              <button className='button-next' onClick={handleNextChapterOrEvaluation}>Próximo Capítulo</button>
             )}
           </div>
         ) : selectedEvaluation !== null ? (

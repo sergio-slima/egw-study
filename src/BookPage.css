@@ -1,14 +1,15 @@
 .book-page-container {
   display: flex;
   /* flex-direction: row; */
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .sidebar {
   width: 16rem;
-  background-color: #333;
+  background-color: #171717;
   transition: width 0.3s ease;
   overflow: hidden;
+  height: 100vh;
 }
 
 .sidebar.closed {
@@ -28,6 +29,12 @@
   width: 100%;
 }
 
+.content-page {
+  padding: 2rem;
+  width: 100%;
+  background-color: #212121;
+}
+
 .toggle-menu {
   display: flex;
 }
@@ -36,13 +43,13 @@
   position: absolute;
   padding: 5px;
   margin: 5px;
-  background-color: #333;
+  background-color: #212121;
   color: #fff;
   cursor: pointer;
 
 }
 
-.logo img {
+.logo-page img {
   /* display: flex; */
   padding: 4px;
   height: 3rem;
@@ -52,7 +59,20 @@
 
 .module-list {
   list-style: none;
-  padding: 0;
+  padding: 0 1rem;
+}
+
+.module-list li {
+  list-style: none;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.button-chapter {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 5px;
+  letter-spacing: 1px;
 }
 
 .module-header {
@@ -61,6 +81,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.module-list h3 {
+  color: #4caf50;
+  cursor: pointer;
+}
+
+.module-arrow {
+  color: #4caf50;
+}
+
+.module-list .list-evaluation {
+  margin-left: 6px;  
+  letter-spacing: 1px;
+  color: #afa54c;
 }
 
 .arrow {
@@ -85,4 +120,22 @@
   color: #fff;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.button-next {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 32rem;
+  }
+
+  .module-list .list-evaluation {
+    margin-left: 10px;
+  }
 }
