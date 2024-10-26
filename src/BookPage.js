@@ -183,18 +183,48 @@ const BookPage = () => {
       <main className={` content-page ${isMenuOpen ? '' : 'expanded'}`}>
         {selectedChapter ? (
           <div className="chapter-content">
+            <h1>{selectedBook.book}</h1>
+            <br/>
             <h2>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].title}</h2>
-            <p>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].content}</p>
+            <br/>
+            {/* <p>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].content}</p>
             <a
               href={selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].image}
               alt="Chapter"
               target='_black'
-            >LEIA O CAPITULO 1 AQUI</a>
+            >LEIA O CAPITULO 1 AQUI</a> */}
             <ul>
               {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].timeline.map((event, eventIndex) => (
-                <li key={eventIndex}>{event}</li>
+                <li key={eventIndex} style={eventIndex === 2 ? { fontStyle: 'italic' } : {}}>
+                  {/^https?:\/\/.*\.(jpg|jpeg|png|gif)$/i.test(event) ? (
+                    // Renderiza a URL como uma imagem se for uma URL de imagem válida
+                    <img src={event} alt="Imagem" style={{ maxWidth: '100%', borderRadius: '8px' }} />
+                  ) : (
+                    // Caso contrário, processa o texto com destaque e quebras de linha
+                    event.split('\n').map((text, i) => {
+                      const parts = text.split(/(\*[^*]+\*)/);
+
+                      return (
+                        <React.Fragment key={i}>
+                          {parts.map((part, idx) =>
+                            part.startsWith("*") && part.endsWith("*") ? (
+                              <span key={idx} style={{ color: '#4caf50' }}>
+                                {part.slice(1, -1)}
+                              </span>
+                            ) : (
+                              part
+                            )
+                          )}
+                          <br />
+                        </React.Fragment>
+                      );
+                    })
+                  )}
+                </li>
               ))}
             </ul>
+
+
 
             {selectedChapter.chapterIndex === selectedBook.modules[selectedChapter.moduleIndex].chapters.length - 1 ? (
               <button className='button-next' onClick={handleNextChapterOrEvaluation}>Realizar Avaliação</button>

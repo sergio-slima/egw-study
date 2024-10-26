@@ -57,6 +57,19 @@
   margin-bottom: 20px;
 }
 
+.chapter-content h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4caf50;
+}
+
+.chapter-content li img {
+  width: 50%;
+  display: block;        /* Remove espaçamentos indesejados em imagens inline */
+  margin: 0 auto; 
+}
+
 .module-list {
   list-style: none;
   padding: 0 1rem;
@@ -98,6 +111,12 @@
   color: #afa54c;
 }
 
+.chapter-content li {
+  list-style: none;
+  margin-bottom: 1rem;
+  text-indent: 1.5em;
+}
+
 .arrow {
   transition: transform 0.3s ease;
 }
@@ -137,5 +156,9 @@
 
   .module-list .list-evaluation {
     margin-left: 10px;
+  }
+
+  .chapter-content li img {
+    width: 100%;
   }
 }
