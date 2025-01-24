@@ -42,11 +42,39 @@
                   "A rebelião de Satanás deveria ser uma lição para o Universo, durante todas as eras vindouras — perpétuo testemunho da natureza do pecado e de seus terríveis resultados. A atuação do governo de Satanás, seus efeitos tanto sobre os homens como sobre os anjos, mostrariam qual seria o fruto de se pôr de parte a autoridade divina. Testificariam que, ligado à existência do governo de Deus, está o bem-estar de todas as criaturas que Ele fez. Assim, a história desta terrível experiência com a rebelião seria uma salvaguarda perpétua para todos os seres santos, para impedir que fossem enganados quanto à natureza da transgressão, para salvá-los de cometer pecado, e de sofrerem sua pena.",
                   "Aquele que governa no Céu é O que vê o fim desde o princípio — o Ser perante o qual os mistérios do passado e do futuro estão igualmente expostos, e que, para além da miséria, trevas e ruína que o pecado acarretou, contempla o cumprimento de Seus propósitos de amor e bênçãos. Se bem que “nuvens e obscuridade estão ao redor dEle, justiça e juízo são a base de Seu trono”. *Salmos 97:2*. E isto os habitantes do Universo, tanto fiéis como infiéis, compreenderão um dia. “Ele é a Rocha, cuja obra é perfeita, porque todos os Seus caminhos juízo são; Deus é a verdade, e não há nEle injustiça: justo e reto é”. *Deuteronômio 32:4*. "
                 ],
-                "image": "https://m.egwwritings.org/pt/book/1815.2#67"
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Qual a principal questão abordada no primeiro capítulo de 'Patriarcas e Profetas'?",
+                      "alternatives": [
+                        "a) A descrição detalhada da criação do mundo.",
+                        "b) A genealogia dos primeiros patriarcas.",
+                        "c) A profecia sobre o dilúvio universal.",
+                        "d) A explicação sobre a origem e a permissão do pecado.",
+                        "e) A vida de Adão e Eva no Jardim do Éden."
+                      ],
+                      "answer": 3,
+                      "justificativa": "O capítulo 1 foca em responder à pergunta sobre por que Deus permitiu a existência do pecado, explorando a natureza do governo divino e a liberdade de escolha."
+                    },
+                    {
+                      "question": "2. Segundo Ellen G. White em 'Patriarcas e Profetas', qual atributo divino é frequentemente mal compreendido em relação à permissão do pecado?",
+                      "alternatives": [
+                        "a) Sua onisciência.",
+                        "b) Sua onipotência.",
+                        "c) Seu amor.",
+                        "d) Sua justiça.",
+                        "e) Sua imutabilidade."
+                      ],
+                      "answer": 2,
+                      "justificativa": "O capítulo argumenta que a permissão do pecado não contradiz o amor de Deus, mas demonstra a importância da liberdade de escolha e a natureza do Seu governo baseado no amor e não na coerção. A autora explora como o amor divino busca o bem maior, mesmo permitindo a existência do mal."
+                    }
+                  ]
+                }
               },
               {
                 "title": "Capítulo 2: A Criação",
-                "content": "This chapter covers the formation of galaxies and the process of star formation.",
+                "content": "A criação do mundo marca o início da narrativa divina em 'Patriarcas e Profetas'. Deus, em Sua infinita sabedoria e onipotência, trouxe aos céus e à terra em um ato de criação sistemático e com propósito. Durante seis dias, a mão divina moldou os elementos, criou corpos celestes e encheu a terra com uma miríade de seres vivos. O ápice dessa criação foi a humanidade. Deus formou Adão do pó da terra e soprou vida em suas narinas, e de uma costela de Adão, criou Eva. Adão e Eva não eram apenas os primeiros humanos, mas também portadores da imagem divina, dotados de intelecto, emoção e livre arbítrio.",
                 "timeline": [
                   "Este capítulo é baseado em *Gênesis 1; 2*.", 
                   "Pela palavra do Senhor foram feitos os céus, e todo o exército deles pelo espírito da Sua boca”. *Salmos 33:6, 9*. “Porque falou, e tudo se fez; mandou, e logo tudo apareceu.” “Lançou os fundamentos da Terra, para que não vacile em tempo algum”. Salmos 104:5. PP 17.1", 
@@ -75,7 +103,35 @@
                   "O santo par não era apenas filhos sob o cuidado paternal de Deus, mas estudantes a receberem instrução do Criador todo-sabedoria. Eram visitados pelos anjos, e concedia-se-lhes comunhão com seu Criador, sem nenhum véu protetor de separação. Estavam cheios do vigor comunicado pela árvore da vida, e sua capacidade intelectual era apenas pouco menor do que a dos anjos. Os mistérios do Universo visível — “maravilhas dAquele que é perfeito nos conhecimentos” (*Jó 37:16*) — conferiam-lhes uma fonte inesgotável de instrução e deleite. As leis e operações da natureza, que têm incitado o estudo dos homens durante seis mil anos, estavam-lhes abertas à mente pelo infinito Construtor e Mantenedor de tudo. Entretinham conversa com a folha, com a flor e a árvore, aprendendo de cada uma os segredos de sua vida. Com cada criatura vivente, desde o poderoso leviatã que folga entre as águas, até o minúsculo inseto que flutua no raio solar, era Adão familiar. Havia dado a cada um o seu nome, e conhecia a natureza e hábitos de todos. A glória de Deus nos Céus, os mundos inumeráveis em suas ordenadas revoluções, “o equilíbrio das grossas nuvens” (*Jó 37:16*), os mistérios da luz e do som, do dia e da noite, tudo estava patente ao estudo de nossos primeiros pais. Em cada folha na floresta, ou pedra nas montanhas, em cada estrela brilhante, na terra, no ar, e no céu, estava escrito o nome de Deus. A ordem e harmonia da criação falavam-lhes de sabedoria e poder infinitos. Estavam sempre a descobrir alguma atração que lhes enchia o coração de mais profundo amor, e provocava novas expressões de gratidão. PP 22.3", 
                   "Enquanto permanecessem fiéis à lei divina, sua capacidade para saber, vivenciar e amar, cresceria continuamente. Estariam constantemente a adquirir novos tesouros de saber, a descobrir novas fontes de felicidade, e a obter concepções cada vez mais claras do incomensurável, infalível amor de Deus."
                 ],
-                "image": "galaxies.jpg"
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Qual a ênfase principal dada por Ellen G. White no capítulo sobre a Criação, em 'Patriarcas e Profetas'?",
+                      "alternatives": [
+                        "a) A apresentação da Criação como um ato direto e poderoso de Deus, em contraste com teorias evolucionistas.",
+                        "b) A descrição detalhada das características geológicas da Terra primitiva.",
+                        "c) A análise das diferentes teorias científicas sobre a origem do universo.",
+                        "d) A explicação das leis físicas que regem o universo e sua formação.",
+                        "e) A comparação entre o relato da Criação em Gênesis e outras mitologias antigas."
+                      ],
+                      "answer": 0,
+                      "justificativa": "Ellen G. White, neste capítulo, enfatiza a criação divina ex nihilo (do nada), pela palavra de Deus, em seis dias literais, contrastando essa visão com as teorias evolucionistas que propõem um desenvolvimento gradual e naturalista da vida."
+                    },
+                    {
+                      "question": "2. Segundo 'Patriarcas e Profetas', qual a implicação da criação do homem e da mulher à imagem de Deus?",
+                      "alternatives": [
+                        "a) Que eles possuíam corpos fisicamente semelhantes aos de Deus.",
+                        "b) Que eles tinham o potencial para desenvolver capacidades tecnológicas avançadas.",
+                        "c) Que eles eram destinados a dominar e explorar a natureza sem nenhuma restrição.",
+                        "d) Que eles eram imortais e viveriam para sempre na Terra, independentemente de suas escolhas.",
+                        "e) Que eles foram criados com capacidades intelectuais e morais, incluindo livre-arbítrio e a capacidade de amar e se relacionar com Deus."
+                      ],
+                      "answer": 4,
+                      "justificativa": "O livro destaca que a imagem de Deus no homem se refere principalmente a aspectos espirituais e morais, como a capacidade de pensar, raciocinar, escolher entre o bem e o mal, e ter comunhão com o Criador. Não se trata primariamente de semelhança física."
+                    }
+                  ]
+                }
               },
               {
                 "title": "Capítulo 3: A Tentação e a Queda",
@@ -144,62 +200,7 @@
                 ],
                 "image": "star_life.jpg"
               }
-            ],
-            "evaluation": {
-            "type": "quiz",
-            "questions": [
-              {
-                "question": "1. Como o universo era descrito antes da rebelião de Lúcifer?",
-                "alternatives": [
-                  "a) Cheio de caos e desordem",
-                  "b) Pacífico e harmonioso",
-                  "c) Cheio de disputas entre anjos",
-                  "d) Governado por medo e tirania"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "2. Quem foi Lúcifer, de acordo com o primeiro capítulo do livro?",
-                "alternatives": [
-                  "a) Um ser humano",
-                  "b) Um anjo comum",
-                  "c) O anjo mais exaltado e belo de todos",
-                  "d) Um arcanjo menor que não tinha poder"
-                ],
-                "answer": 2
-              },
-              {
-                "question": "3. Qual foi o primeiro sentimento que surgiu em Lúcifer, levando à sua rebelião?",
-                "alternatives": [
-                  "a) Orgulho",
-                  "b) Ciúmes",
-                  "c) Ódio",
-                  "d) Medo"
-                ],
-                "answer": 0
-              },
-              {
-                "question": "4. Como Deus reagiu inicialmente à rebelião de Lúcifer?",
-                "alternatives": [
-                  "a) Expulsou Lúcifer imediatamente do céu",
-                  "b) pediu aos anjos que o evitassem",
-                  "c) Destruiu Lúcifer no momento em que ele se rebelou",
-                  "d) Mostrou-lhe misericórdia e tentou resgatá-lo"
-                ],
-                "answer": 3
-              },
-              {
-                "question": "5. Quantos anjos Lúcifer conseguiu convencer a segui-lo?",
-                "alternatives": [
-                  "a) Todos os anjos do céu",
-                  "b) Metade dos anjos",
-                  "c) Um quarto dos anjos",
-                  "d) Um terço dos anjos "
-                ],
-                "answer": 3
-              }
-            ]
-          }
+            ]            
           },
           {
             "moduleTitle": "Módulo 2",
