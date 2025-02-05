@@ -8,8 +8,8 @@
             "moduleTitle": "Módulo 1",
             "chapters": [
               {
-                "title": "Capítulo 1: Porque foi permitido o pecado?",
-                "content": "O primeiro capítulo do livro Patriarcas e Profetas de Ellen G. White é intitulado 'Por que o pecado foi permitido' e aborda a origem do mal no universo e o conflito entre o bem e o mal.",
+                "chapter": "1",
+                "title": "Porque foi permitido o pecado?",
                 "timeline": [
                   "“Deus é amor”. *1 João 4:8*. Sua natureza, Sua lei, são amor. Assim sempre foi; assim sempre será. “O Alto e o Sublime, que habita na eternidade” *(Isaías 57:15)*, “cujos caminhos são eternos” *(Habacuque 3:6)*, não muda. NEle “não há mudança nem sombra de variação”. *Tiago 1:17*.",
                   "Toda manifestação de poder criador é uma expressão de amor infinito. A soberania de Deus compreende a plenitude de bênçãos a todos os seres criados.",
@@ -73,8 +73,8 @@
                 }
               },
               {
-                "title": "Capítulo 2: A Criação",
-                "content": "A criação do mundo marca o início da narrativa divina em 'Patriarcas e Profetas'. Deus, em Sua infinita sabedoria e onipotência, trouxe aos céus e à terra em um ato de criação sistemático e com propósito. Durante seis dias, a mão divina moldou os elementos, criou corpos celestes e encheu a terra com uma miríade de seres vivos. O ápice dessa criação foi a humanidade. Deus formou Adão do pó da terra e soprou vida em suas narinas, e de uma costela de Adão, criou Eva. Adão e Eva não eram apenas os primeiros humanos, mas também portadores da imagem divina, dotados de intelecto, emoção e livre arbítrio.",
+                "chapter": "2",
+                "title": "A Criação",
                 "timeline": [
                   "Este capítulo é baseado em *Gênesis 1; 2*.", 
                   "Pela palavra do Senhor foram feitos os céus, e todo o exército deles pelo espírito da Sua boca”. *Salmos 33:6, 9*. “Porque falou, e tudo se fez; mandou, e logo tudo apareceu.” “Lançou os fundamentos da Terra, para que não vacile em tempo algum”. Salmos 104:5. PP 17.1", 
@@ -134,8 +134,8 @@
                 }
               },
               {
-                "title": "Capítulo 3: A Tentação e a Queda",
-                "content": "An in-depth look at the life cycle of stars, from birth to supernova.",
+                "chapter": "3",
+                "title": "A Tentação e a Queda",
                 "timeline": [
                   "Não mais se achando livre para instigar a rebelião no Céu, encontrou a inimizade de Satanás contra Deus um novo campo, ao tramar a ruína do gênero humano. Na felicidade e paz do santo casal do Éden, contemplou um quadro da ventura que para ele estava para sempre perdida. Movido pela inveja decidiu-se a incitá-los à desobediência, e trazer sobre eles a culpa e o castigo do pecado. Mudaria o seu amor em desconfiança, seus cânticos de louvor em exprobrações a seu Criador. Assim não somente mergulharia estes seres inocentes na mesma miséria que ele próprio suportava, mas lançaria desonra a Deus, e ocasionaria pesares no Céu. PP 24.1",
                   "Nossos primeiros pais não foram deixados sem avisos do perigo que os ameaçava. Mensageiros celestiais expuseram-lhes a história da queda de Satanás, e suas tramas para sua destruição, explicando mais completamente a natureza do governo divino, que o príncipe do mal estava procurando transtornar. Foi pela desobediência às justas ordens de Deus que Satanás e seu exército caíram. Quão importante, pois, que Adão e Eva honrassem aquela lei pela qual somente é possível manter-se a ordem e a eqüidade! PP 24.2",
@@ -178,27 +178,132 @@
                   "O jardim do Éden permaneceu na Terra muito tempo depois que o homem fora expulso de seus agradáveis caminhos. *Gênesis 4:16*. Foi permitido à raça decaída por muito tempo contemplar o lar da inocência, estando a sua entrada vedada apenas pelos anjos vigilantes. À porta do Paraíso, guardada pelos querubins, revelava-se a glória divina. Para ali iam Adão e seus filhos a fim de adorarem a Deus. Ali renovaram seus votos de obediência àquela lei cuja transgressão os havia banido do Éden. Quando a onda de iniquidade se propagou pelo mundo, e a impiedade dos homens determinou sua destruição por meio de um dilúvio de água, a mão que plantara o Éden o retirou da Terra. Mas, na restauração final de todas as coisas, quando houver “um novo céu e uma nova Terra” (*Apocalipse 21:1*), será restabelecido, mais gloriosamente adornado do que no princípio. PP 32.4",
                   "Então os que guardaram os mandamentos de Deus respirarão um vigor imortal, por sob a árvore da vida (*Apocalipse 2:7; 22:14*); e, através de infindáveis séculos, os habitantes dos mundos que não pecaram contemplarão no jardim de delícias um modelo da obra perfeita da criação de Deus, sem qualquer sinal da maldição do pecado — modelo do que teria sido a Terra inteira se tão-somente houvesse o homem cumprido o plano glorioso do Criador. "
                 ],
-                "image": "star_life.jpg"
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Qual foi a principal estratégia usada por Satanás para enganar Eva, conforme descrito em 'Patriarcas e Profetas'?",
+                      "alternatives": [
+                        "a) Apresentar-se em sua forma demoníaca e ameaçadora.",
+                        "b) Questionar abertamente a existência de Deus.",
+                        "c) Distorcer e questionar a palavra de Deus, semeando dúvidas sobre Sua bondade e confiabilidade.",
+                        "d) Oferecer a Eva presentes materiais valiosos.",
+                        "e) Usar a força física para compelir Eva a desobedecer."
+                      ],
+                      "answer": 2,
+                      "justificativa": "O livro descreve como Satanás, usando a serpente como um meio, questionou a proibição divina de comer da árvore do conhecimento do bem e do mal, insinuando que Deus estava retendo algo bom deles e que, na verdade, comer do fruto os tornaria como Ele."
+                    },
+                    {
+                      "question": "2. Qual foi a consequência imediata da desobediência de Adão e Eva, segundo 'Patriarcas e Profetas'?",
+                      "alternatives": [
+                        "a) Eles foram imediatamente expulsos do Jardim do Éden por anjos.",
+                        "b) Eles experimentaram o conhecimento do bem e do mal, acompanhado de um sentimento de culpa, vergonha e separação de Deus.",
+                        "c) Eles se tornaram fisicamente mais fortes e inteligentes.",
+                        "d) Eles receberam o poder de viver para sempre, mesmo tendo desobedecido.",
+                        "e) Nada mudou imediatamente, e eles continuaram a viver normalmente no Éden."
+                      ],
+                      "answer": 1,
+                      "justificativa": "O texto enfatiza que, ao comerem do fruto proibido, Adão e Eva adquiriram o conhecimento do mal, experimentando pela primeira vez sentimentos de culpa, vergonha e a consciência de sua nudez, além da separação da comunhão direta com Deus."
+                    }
+                  ]
+                }
               },
               {
-                "title": "Capítulo 4: A Tentação e a Queda",
-                "content": "An in-depth look at the life cycle of stars, from birth to supernova.",
+                "chapter": "4",
+                "title": "A Tentação e a Queda",
+                "timeline": [
+                  "A queda do homem encheu o Céu todo de tristeza. O mundo que Deus fizera estava manchado pela maldição do pecado, e habitado por seres condenados à miséria e morte. Não parecia haver meio pelo qual pudessem escapar os que tinham transgredido a lei. Os anjos cessaram os seus cânticos de louvor. Por toda a corte celestial havia pranto pela ruína que o pecado ocasionara. PP 33.1",
+                  "O Filho de Deus, o glorioso Comandante do Céu, ficou tocado de piedade pela raça decaída. Seu coração moveu-se de infinita compaixão ao erguerem-se diante dEle os ais do mundo perdido. Entretanto o amor divino havia concebido um plano pelo qual o homem poderia ser remido. A lei de Deus, quebrantada, exigia a vida do pecador. Em todo o Universo não havia senão um Ser que, em favor do homem, poderia satisfazer as suas reivindicações. Visto que a lei divina é tão sagrada como o próprio Deus, unicamente um Ser igual a Deus poderia fazer expiação por sua transgressão. Ninguém, a não ser Cristo, poderia redimir da maldição da lei o homem decaído, e levá-lo novamente à harmonia com o Céu. Cristo tomaria sobre Si a culpa e a ignomínia do pecado — pecado tão ofensivo para um Deus santo que deveria separar entre Si o Pai e o Filho. Cristo atingiria as profundidades da miséria para libertar a raça que fora arruinada. PP 33.2",
+                  "Perante o Pai pleiteou Ele em prol do pecador, enquanto a hoste celestial aguardava o resultado com um interesse de tal intensidade que palavras não o poderão exprimir. Mui prolongada foi aquela comunhão misteriosa — o “conselho de paz” (*Zacarias 6:13*) em prol dos decaídos filhos dos homens. O plano da salvação fora estabelecido antes da criação da Terra; pois Cristo é “o Cordeiro morto desde a fundação do mundo” (*Apocalipse 13:8*); foi, contudo, uma luta, mesmo para o Rei do Universo, entregar Seu Filho para morrer pela raça culposa. Mas “Deus amou o mundo de tal maneira que deu Seu Filho unigênito, para que todo aquele que nEle crê não pereça, mas tenha a vida eterna”. *João 3:16*. Oh, que mistério da redenção! o amor de Deus por um mundo que O não amou! Quem pode conhecer as profundidades daquele amor que “excede todo o entendimento?” Durante séculos eternos, mentes imortais, procurando entender o mistério daquele amor incompreensível, maravilhar-se-ão e adorarão. PP 33.3",
+                  "Deus ia ser manifesto em Cristo, “reconciliando consigo o mundo”. *2 Coríntios 5:19*. O homem se tornara tão degradado pelo pecado que lhe era impossível, por si mesmo, andar em harmonia com Aquele cuja natureza é pureza e bondade. Mas Cristo, depois de ter remido o homem da condenação da lei, poderia comunicar força divina para se unir com o esforço humano. Assim, pelo arrependimento para com Deus e fé em Cristo, os caídos filhos de Adão poderiam mais uma vez tornar-se “filhos de Deus”. *1 João 3:2*. PP 33.4",
+                  "O plano pelo qual poderia unicamente conseguir-se a salvação do homem, abrangia o Céu todo em seu infinito sacrifício. Os anjos não puderam regozijar-se ao desvendar-lhes Cristo o plano da redenção; pois viram que a salvação do homem deveria custar a indizível mágoa de seu amado Comandante. Com pesar e admiração escutaram Suas palavras ao contar-lhes Ele como deveria descer da pureza e paz do Céu, de sua alegria, glória e vida imortal, e vir em contato com a degradação da Terra, para suportar suas tristezas, ignomínia e morte. Ele deveria ficar entre o pecador e a pena do pecado; poucos, todavia, O receberiam como o Filho de Deus. ",
+                  "Deixaria Sua elevada posição como a Majestade do Céu, apareceria na Terra e humilhar-Se-ia como um homem, e, pela Sua própria experiência, familiarizar-Se-ia com as tristezas e tentações que o homem teria de enfrentar. Tudo isto seria necessário a fim de que Ele pudesse socorrer os que fossem tentados. *Hebreus 2:18*. Quando Sua missão como ensinador estivesse terminada, deveria ser entregue nas mãos de homens ímpios, e ser submetido a todo insulto e tortura que Satanás os poderia inspirar a infligir. Deveria morrer a mais cruel das mortes, suspenso entre o céu e a Terra como um pecador criminoso. Deveria passar longas horas de agonia tão terrível que anjos não poderiam olhar para isso, mas velariam o rosto para não verem aquele quadro. Deveria suportar aflição de alma, a ocultação da face do Pai, enquanto a culpa da transgressão — o peso dos pecados do mundo inteiro — estivessem sobre Ele. PP 34.1",
+                  "Os anjos prostraram-se aos pés de Seu Comandante, e ofereceram-se para serem sacrifício para o homem. Mas a vida de um anjo não poderia pagar a dívida; apenas Aquele que criara o homem tinha poder para o redimir. Contudo, deveriam os anjos ter uma parte a desempenhar no plano da redenção. Cristo havia de fazer-Se “um pouco menor do que os anjos, por causa da paixão da morte”. *Hebreus 2:9*. Tomando Ele sobre Si a natureza humana, Sua força não seria igual à deles, e deveriam eles ministrar-Lhe, fortalecê-Lo em Seus sofrimentos, e mitigar-Lhos. Deveriam também ser espíritos ministradores, enviados para ministrarem a favor daqueles que seriam herdeiros da salvação. *Hebreus 1:14*. Eles guardariam os súditos da graça, do poder dos anjos maus, e das trevas arremessadas constantemente em redor deles por Satanás. PP 34.2",
+                  "Quando os anjos testemunhassem a agonia e humilhação de seu Senhor, encher-se-iam de dor e indignação, e desejariam livrá-Lo de Seus assassinos; mas não deveriam intervir a fim de evitar qualquer coisa que vissem. Fazia parte do plano da redenção que Cristo sofresse o escárnio e mau trato de homens ímpios; e Ele consentiu com tudo isto quando Se tornou o Redentor do homem. PP 34.3",
+                  "Cristo assegurou aos anjos que pela Sua morte resgataria a muitos, e destruiria aquele que tinha o poder da morte. Recuperaria o reino que o homem perdera pela transgressão, e os remidos deveriam herdá-lo com Ele, e nele habitar para sempre. Pecado e pecadores seriam extintos, para nunca mais perturbarem a paz do Céu ou da Terra. Ele ordenou que o exército angélico estivesse de acordo com o plano que Seu Pai aceitara, e se alegrasse de que, pela Sua morte, o homem decaído pudesse reconciliar-se com Deus. PP 35.1",
+                  "Então alegria, inexprimível alegria, encheu o Céu. A glória e bem-aventurança de um mundo remido sobrepujaram mesmo a angústia e sacrifício do Príncipe da vida. Pelos paços celestiais ecoaram os primeiros acordes daquele cântico que deveria soar por sobre as colinas de Belém: “Glória a Deus nas alturas, paz na Terra, boa vontade para com os homens”. *Lucas 2:14*. Com mais intensa alegria então do que no enlevo da criação recém-feita, “as estrelas da alva juntas alegremente cantavam, e todos os filhos de Deus rejubilavam”. *Jó 38:7*. PP 35.2",
+                  "Para o homem, a primeira indicação de redenção foi dada na sentença pronunciada sobre Satanás, no jardim. Declarou o Senhor: “Porei inimizade entre ti e a mulher, e entre a tua semente e a sua semente; esta te ferirá a cabeça e tu lhe ferirás o calcanhar”. *Gênesis 3:15*. Esta sentença, proferida aos ouvidos de nossos primeiros pais, foi para eles uma promessa. Ao mesmo tempo em que predizia guerra entre o homem e Satanás, declarava que o poder do grande adversário finalmente seria quebrado. Adão e Eva achavam-se como criminosos diante do justo Juiz, esperando a sentença em que pela transgressão tinham incorrido; mas antes que ouvissem da vida de lutas e tristezas que devia ser a sua porção, ou o decreto de que deviam voltar ao pó, escutaram palavras que não poderiam deixar de lhes dar esperança. Posto que devessem sofrer pelo poder de seu forte adversário, poderiam olhar no futuro para a vitória final. PP 35.3",
+                  "Quando Satanás ouviu que existiria inimizade entre ele e a mulher, e entre sua semente e a semente dela, viu que sua obra de degenerar a natureza humana seria interrompida; que por algum meio o homem se habilitaria a resistir a seu poder. Sendo, contudo, o plano da salvação mais amplamente patenteado, Satanás regozijou-se com seus anjos de que, tendo ocasionado a queda do homem, faria baixar o Filho de Deus de Sua exaltada posição. Declarou que até ali haviam sido os seus planos muito bem-sucedidos na Terra, e que, quando Cristo tomasse sobre Si a natureza humana, Ele também poderia ser vencido, e desta maneira ser impedida a redenção da raça decaída. PP 35.4",
+                  "Anjos celestiais de maneira mais ampla patentearam a nossos primeiros pais o plano que fora concebido para a sua salvação. Afirmou-se a Adão e sua companheira que, apesar de seu grande pecado, não seriam eles abandonados ao domínio de Satanás. O Filho de Deus Se oferecera, para expiar, com Sua própria vida, a transgressão deles. Um período de graça lhes seria concedido e, mediante o arrependimento e a fé em Cristo, poderiam de novo tornar-se filhos de Deus. PP 35.5",
+                  "O sacrifício exigido por sua transgressão, revelava a Adão e Eva o caráter sagrado da lei de Deus; e viram, como nunca antes o fizeram, a culpabilidade do pecado, e seus funestos resultados. Em seu remorso e angústia rogaram que a pena não recaísse nAquele cujo amor havia sido a fonte de toda a sua alegria; antes, que repousasse sobre eles e sua posteridade. PP 36.1",
+                  "Foi-lhes dito que, visto ser a lei de Jeová o fundamento de Seu governo no Céu assim como na Terra, mesmo a vida de um anjo não poderia ser aceita como sacrifício por sua transgressão. Nenhum de seus preceitos poderia ser anulado ou mudado para valer ao homem em sua condição decaída; mas o Filho de Deus, que criara o homem, poderia fazer expiação por ele. Assim como a transgressão de Adão tinha trazido miséria e morte, o sacrifício de Cristo traria vida e imortalidade. PP 36.2",
+                  "Não somente o homem mas também a Terra tinha pelo pecado vindo sob o poder do maligno, e deveria ser restaurada pelo plano da redenção. Ao ser criado, foi Adão posto no domínio da Terra. Mas, cedendo à tentação, foi levado sob o poder de Satanás. “Porque de quem alguém é vencido, do tal faz-se também servo”. *2 Pedro 2:19*. Quando o homem se tornou cativo de Satanás, o domínio que exercera passou para o seu vencedor. Assim Satanás se tornou o “deus deste século”. *2 Coríntios 4:4*. Ele usurpou aquele domínio sobre a Terra, que originalmente fora dado a Adão. Cristo, porém, pagando pelo Seu sacrifício a pena do pecado, não somente remiria o homem mas restabeleceria o domínio que ele perdera. Tudo que foi perdido pelo primeiro Adão será restaurado pelo segundo. Diz o profeta: “E a Ti, ó Torre do rebanho, monte da filha de Sião, a Ti virá; sim, a Ti virá o primeiro domínio”. *Miquéias 4:8*. E o apóstolo Paulo aponta para a “redenção da possessão de Deus”. *Efésios 1:14*. Deus criou a Terra para ser a morada de seres santos, felizes. O Senhor “formou a Terra, e a fez; Ele a estabeleceu, não a criou vazia, mas a formou para que fosse habitada”. *Isaías 45:18*. Aquele propósito se cumprirá, quando, renovada pelo poder de Deus, e libertada do pecado e tristeza, se tornar a eterna habitação dos remidos. “Os justos herdarão a Terra, e habitarão nela para sempre”. *Salmos 37:29*. “E ali nunca mais haverá maldição contra alguém; e nela estará o trono de Deus e do Cordeiro, e os Seus servos O servirão”. *Apocalipse 22:3*. PP 36.3",
+                  "Adão, em sua inocência, havia desfrutado ampla comunhão com seu Criador; mas o pecado opera separação entre Deus e o homem, e unicamente a obra expiatória de Cristo poderia transpor o abismo, e tornar possível a comunicação de bênçãos ou salvação, do Céu à Terra. O homem ainda estava desligado de uma aproximação direta com o seu Criador, mas Deus Se comunicaria com ele por meio de Cristo e os anjos. PP 36.4",
+                  "Assim, foram revelados a Adão fatos importantes na história da humanidade, desde o tempo em que a sentença divina fora pronunciada no Éden, até o dilúvio, e, a seguir, até o primeiro advento do Filho de Deus. Mostrou-se-lhe que, conquanto o sacrifício de Cristo fosse de valor suficiente para salvar o mundo inteiro, muitos prefeririam uma vida de pecado em vez de arrependimento e obediência. O crime aumentaria durante gerações sucessivas, e a maldição do pecado repousaria mais e mais pesadamente sobre o gênero humano, sobre os animais e sobre a Terra. Os dias do homem seriam abreviados pela sua própria conduta de pecado; degenerar-se-ia ele em sua estatura e resistência física, e em sua faculdade moral e intelectual, até que o mundo se enchesse de misérias de todo o tipo. Mediante a satisfação do apetite e paixão, tornar-se-iam os homens incapazes de apreciar as grandes verdades do plano da redenção. Cristo, no entanto, fiel ao propósito pelo qual deixou o Céu, continuaria Seu interesse pelos homens, e ainda os convidaria a esconder nEle suas fraquezas e deficiências. Supriria as necessidades de todos os que a Ele viessem pela fé. E sempre haveria alguns que preservariam o conhecimento de Deus, e permaneceriam incontaminados por entre a iniqüidade que prevaleceria. PP 37.1",
+                  "As ofertas sacrificais foram ordenadas por Deus a fim de serem para o homem uma perpétua lembrança de seu pecado, e um reconhecimento de arrependimento do mesmo, bem como seriam uma confissão de sua fé no Redentor prometido. Destinavam-se a impressionar a raça decaída com a solene verdade de que foi o pecado que causou a morte. Para Adão, a oferta do primeiro sacrifício foi uma cerimônia dolorosíssima. Sua mão deveria erguer-se para tirar a vida, a qual unicamente Deus podia dar. Foi a primeira vez que testemunhava a morte, e sabia que se ele tivesse sido obediente a Deus não teria havido morte de homem ou animal. Ao matar a inocente vítima, tremeu com o pensamento de que seu pecado deveria derramar o sangue do imaculado Cordeiro de Deus. Esta cena deu-lhe uma intuição mais profunda e vívida da grandeza de sua transgressão, que coisa alguma a não ser a morte do amado Filho de Deus poderia expiar. E maravilhou-se com a bondade infinita que daria tal resgate para salvar o culpado. Uma estrela de esperança iluminou o futuro tenebroso e terrível, e o aliviou de sua desolação total. PP 37.2",
+                  "Mas o plano da redenção tinha um propósito ainda mais vasto e profundo do que a salvação do homem. Não foi para isto apenas que Cristo veio à Terra; não foi simplesmente para que os habitantes deste pequeno mundo pudessem considerar a lei de Deus como devia ela ser considerada; mas foi para reivindicar o caráter de Deus perante o Universo. Para este resultado de Seu grande sacrifício, ou seja, a influência do mesmo sobre os entes de outros mundos, bem como sobre o homem, olhou antecipadamente o Salvador quando precisamente antes de Sua crucifixão disse: “Agora é o juízo deste mundo; agora será expulso o príncipe deste mundo. E Eu, quando for levantado da terra, todos atrairei a Mim”. *João 12:31, 32*. O ato de Cristo ao morrer pela salvação do homem, não somente tornaria o Céu acessível à humanidade, mas perante todo o Universo justificaria a Deus e Seu Filho, em Seu trato com a rebelião de Satanás. Estabeleceria a perpetuidade da lei de Deus, e revelaria a natureza e os resultados do pecado. PP 37.3",
+                  "Desde o princípio a grande controvérsia fora a respeito da lei de Deus. Satanás procurara provar que Deus era injusto, que Sua lei era defeituosa, e que o bem do Universo exigia que ela fosse mudada. Atacando a lei, visava ele subverter a autoridade de seu Autor. Mostrar-se-ia no conflito se os estatutos divinos eram deficientes e passíveis de mudança, ou perfeitos e imutáveis. PP 38.1",
+                  "Quando Satanás foi arremessado do Céu, resolveu tornar a Terra o seu reino. Quando tentou e venceu Adão e Eva, achou que havia adquirido posse deste mundo; “porque”, dizia ele, “escolheram a mim como seu príncipe”. Alegava que era impossível ser concedido o perdão ao pecador, e, portanto, a raça decaída constituía legítimos súditos seus, e seu era o mundo. Mas Deus dera o Seu amado Filho — igual a Ele mesmo, a fim de suportar a pena da transgressão, e assim proveu um caminho pelo qual pudessem ser restabelecidos ao Seu favor, e de novo trazidos ao seu lar edênico. Cristo empreendeu redimir o homem, e livrar o mundo das garras de Satanás. O grande conflito iniciado no Céu devia ser decidido no próprio mundo, no próprio campo que Satanás alegara como seu. PP 38.2",
+                  "Foi maravilha para todo o Universo que Cristo Se humilhasse para salvar o homem decaído. Que Aquele que passara de uma estrela para outra, de um mundo para outro, dirigindo tudo, suprindo pela Sua providência as necessidades de toda a ordem de seres em Sua vasta criação — que Ele consentisse em deixar Sua glória e tomar sobre Si a natureza humana, era um mistério que os seres sem pecado de outros mundos desejavam compreender. Quando Cristo veio ao nosso mundo sob a forma humana, todos estavam profundamente interessados em acompanhá-Lo, ao percorrer Ele, passo a passo, a vereda ensangüentada a partir da manjedoura ao Calvário. O Céu observou o insulto e zombaria que Ele recebeu, e sabia que isto foi por instigação de Satanás. Notaram a operação das forças contrárias a avançar, impelindo Satanás constantemente trevas, tristezas e sofrimento sobre a raça, e estando Cristo a reagir contra isso. Observaram a batalha entre a luz e as trevas, enquanto a mesma se tornava mais forte. E ao clamar Cristo em Sua aflição mortal sobre a cruz: “Está consumado” (*João 19:30*), um brado de triunfo repercutiu por todos os mundos, e pelo próprio Céu. A grande contenda que estivera em andamento durante tanto tempo neste mundo, estava agora decidida, e Cristo era vencedor. Sua morte resolveu a questão de terem ou não o Pai e o Filho amor suficiente pelo homem para exercerem a abnegação e um espírito de sacrifício. Havia Satanás revelado seu verdadeiro caráter de mentiroso e assassino. Viu-se que o mesmo espírito, com que governara os filhos dos homens que estiveram sob o seu poder, ele teria manifestado se lhe fora permitido governar os seres do Céu. Unanimemente o Universo fiel uniu-se no engrandecimento da administração divina. PP 38.3",
+                  "Se a lei pudesse ser mudada, ter-se-ia podido salvar o homem sem o sacrifício de Cristo; mas o fato de que foi necessário Cristo dar a vida pela raça caída prova que a lei de Deus não livrará o pecador de suas reivindicações sobre ele. Está demonstrado que o salário do pecado é a morte. Quando Cristo morreu, ficou assegurada a destruição de Satanás. Mas, se a lei foi abolida na cruz, como muitos pretendem, a agonia e morte do amado Filho de Deus foram suportadas unicamente para dar a Satanás exatamente o que ele pedia; triunfou então o príncipe do mal, foram sustentadas suas acusações contra o governo divino. O próprio fato de que Cristo suportou a pena da transgressão do homem, é um poderoso argumento a todos os seres criados, de que a lei é imutável; que Deus é justo, misericordioso, e abnegado; e que a justiça e misericórdia infinitas unem-se na administração de Seu governo."
+                ],
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Qual a principal consequência da queda de Adão e Eva que exigiu um plano de redenção, de acordo com 'Patriarcas e Profetas'?",
+                      "alternatives": [
+                        "a) A perda do domínio sobre os animais.",
+                        "b) A necessidade de trabalhar para obter o sustento.",
+                        "c) A perda da capacidade de comunicação entre si.",
+                        "d) A separação da humanidade de Deus e a sujeição à morte.",
+                        "e) A alteração do clima da Terra, tornando-a menos hospitaleira."
+                      ],
+                      "answer": 3,
+                      "justificativa": "O capítulo enfatiza que a desobediência de Adão e Eva resultou na quebra da comunhão com Deus e na entrada do pecado e da morte no mundo, criando a necessidade de um plano para reconciliar a humanidade com o Criador e oferecer a vida eterna."
+                    },
+                    {
+                      "question": "2. Segundo 'Patriarcas e Profetas', qual foi a solução providenciada por Deus para a condição da humanidade após a queda?",
+                      "alternatives": [
+                        "a) A abolição imediata da lei divina.",
+                        "b) O envio de anjos para guiar a humanidade de volta à obediência.",
+                        "c) A concessão de uma segunda chance para Adão e Eva no Jardim do Éden.",
+                        "d) A revelação de novos mandamentos que seriam mais fáceis de obedecer.",
+                        "e) O sacrifício de Seu próprio Filho, Jesus Cristo, para pagar a penalidade do pecado e oferecer a salvação. "
+                      ],
+                      "answer": 4,
+                      "justificativa": "Este capítulo centraliza-se na promessa do Salvador, que seria o meio pelo qual a humanidade poderia ser redimida e reconciliada com Deus. O sacrifício de Cristo é apresentado como o fundamento do plano da redenção."
+                    }
+                  ]
+                }
+              },
+              {
+                "chapter": "5",
+                "title": "Caim e Abel",
                 "timeline": [
                   "Nebula formation: Birthplace of stars.",
                   "Main sequence: Stable phase of a star.",
                   "Supernova: The explosive death of a massive star."
-                ],
-                "image": "star_life.jpg"
-              },
-              {
-                "title": "Capítulo 5: Caim e Abel",
-                "content": "An in-depth look at the life cycle of stars, from birth to supernova.",
-                "timeline": [
-                  "Nebula formation: Birthplace of stars.",
-                  "Main sequence: Stable phase of a star.",
-                  "Supernova: The explosive death of a massive star."
-                ],
-                "image": "star_life.jpg"
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. De acordo com 'Patriarcas e Profetas'?",
+                      "alternatives": [
+                        "a) A perda do domínio sobre os animais.",
+                        "b) A necessidade de trabalhar para obter o sustento.",
+                        "c) A perda da capacidade de comunicação entre si.",
+                        "d) A separação da humanidade de Deus e a sujeição à morte.",
+                        "e) A alteração do clima da Terra, tornando-a menos hospitaleira."
+                      ],
+                      "answer": 3,
+                      "justificativa": "O capítulo enfatiza que a desobediência de Adão e Eva resultou na quebra da comunhão com Deus e na entrada do pecado e da morte no mundo, criando a necessidade de um plano para reconciliar a humanidade com o Criador e oferecer a vida eterna."
+                    },
+                    {
+                      "question": "2. Segundo 'Patriarcas e Profetas', qual foi a solução providenciada por Deus para a condição da humanidade após a queda?",
+                      "alternatives": [
+                        "a) A abolição imediata da lei divina.",
+                        "b) O envio de anjos para guiar a humanidade de volta à obediência.",
+                        "c) A concessão de uma segunda chance para Adão e Eva no Jardim do Éden.",
+                        "d) A revelação de novos mandamentos que seriam mais fáceis de obedecer.",
+                        "e) O sacrifício de Seu próprio Filho, Jesus Cristo, para pagar a penalidade do pecado e oferecer a salvação. "
+                      ],
+                      "answer": 4,
+                      "justificativa": "Este capítulo centraliza-se na promessa do Salvador, que seria o meio pelo qual a humanidade poderia ser redimida e reconciliada com Deus. O sacrifício de Cristo é apresentado como o fundamento do plano da redenção."
+                    }
+                  ]
+                }
               }
             ]            
           },
@@ -206,271 +311,773 @@
             "moduleTitle": "Módulo 2",
             "chapters": [
               {
-                "title": "Chapter 1: Dark Matter and Energy",
-                "content": "A deep dive into the mysterious forces shaping the universe.",
+                "chapter": "6",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "1930s: Discovery of dark matter.",
-                  "1998: Discovery of dark energy.",
-                  "Present: Ongoing research on dark matter and energy."
-                ],
-                "image": "dark_matter.jpg"
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               },
               {
-                "title": "Chapter 2: Cosmic Background Radiation",
-                "content": "The remnants of the Big Bang still visible in the universe today.",
+                "chapter": "7",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "1965: Discovery of cosmic microwave background radiation.",
-                  "CMB: Proof of the universe's hot, dense origin.",
-                  "Present: Studies of fluctuations in the CMB."
-                ],
-                "image": "cosmic_radiation.jpg"
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               },
               {
-                "title": "Chapter 3: Fate of the Universe",
-                "content": "Various theories about how the universe might end.",
+                "chapter": "8",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "Heat death: Gradual entropy increase.",
-                  "Big Crunch: Universe collapses in on itself.",
-                  "Big Rip: Universe tears apart."
-                ],
-                "image": "fate_universe.jpg"
-              }
-            ],
-            "evaluation": {
-            "type": "quiz",
-            "questions": [
-              {
-                "question": "What is the capital of France?",
-                "alternatives": [
-                  "Bacabau",
-                  "Madrid",
-                  "Paris",
-                  "Rome"
-                ],
-                "answer": 2
-              },
-              {
-                "question": "Which element has the atomic number 1?",
-                "alternatives": [
-                  "Oxygen",
-                  "Hydrogen",
-                  "Carbon",
-                  "Helium"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "What is the largest planet in our solar system?",
-                "alternatives": [
-                  "Earth",
-                  "Mars",
-                  "Jupiter",
-                  "Saturn"
-                ],
-                "answer": 2
-              },
-              {
-                "question": "Who wrote 'To Kill a Mockingbird'?",
-                "alternatives": [
-                  "Mark Twain",
-                  "Harper Lee",
-                  "Ernest Hemingway",
-                  "F. Scott Fitzgerald"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "Which country hosted the 2016 Summer Olympics?",
-                "alternatives": [
-                  "China",
-                  "Brazil",
-                  "Russia",
-                  "United Kingdom"
-                ],
-                "answer": 1
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "9",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "10",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               }
             ]
-          }
           },
           {
             "moduleTitle": "Módulo 3",
             "chapters": [
               {
-                "title": "Chapter 1: The Space Race",
-                "content": "A history of humanity’s quest to reach space.",
+                "chapter": "11",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "1957: Launch of Sputnik 1.",
-                  "1969: Apollo 11 lands on the moon.",
-                  "Present: Private companies join space exploration."
-                ],
-                "image": "space_race.jpg"
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               },
               {
-                "title": "Chapter 2: Mars Exploration",
-                "content": "Current missions and plans for future human exploration of Mars.",
+                "chapter": "12",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "1976: Viking 1 lands on Mars.",
-                  "2004: Rovers Spirit and Opportunity land on Mars.",
-                  "Present: Ongoing Mars missions and future plans."
-                ],
-                "image": "mars.jpg"
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               },
               {
-                "title": "Chapter 3: The Future of Space Travel",
-                "content": "Looking ahead to new technologies and the possibility of interstellar travel.",
+                "chapter": "13",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "Present: Development of reusable rockets.",
-                  "Future: Space tourism and colonization of planets.",
-                  "Far future: Possibility of interstellar travel."
-                ],
-                "image": "future_space_travel.jpg"
-              }
-            ],
-            "evaluation": {
-            "type": "quiz",
-            "questions": [
-              {
-                "question": "What is the capital of France?",
-                "alternatives": [
-                  "Buriticupu",
-                  "Madrid",
-                  "Paris",
-                  "Rome"
-                ],
-                "answer": 2
-              },
-              {
-                "question": "Which element has the atomic number 1?",
-                "alternatives": [
-                  "Oxygen",
-                  "Hydrogen",
-                  "Carbon",
-                  "Helium"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "What is the largest planet in our solar system?",
-                "alternatives": [
-                  "Earth",
-                  "Mars",
-                  "Jupiter",
-                  "Saturn"
-                ],
-                "answer": 2
-              },
-              {
-                "question": "Who wrote 'To Kill a Mockingbird'?",
-                "alternatives": [
-                  "Mark Twain",
-                  "Harper Lee",
-                  "Ernest Hemingway",
-                  "F. Scott Fitzgerald"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "Which country hosted the 2016 Summer Olympics?",
-                "alternatives": [
-                  "China",
-                  "Brazil",
-                  "Russia",
-                  "United Kingdom"
-                ],
-                "answer": 1
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "14",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "15",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               }
             ]
-          }
           },
           {
             "moduleTitle": "Módulo 4",
             "chapters": [
               {
-                "title": "Chapter 1: The Space Race",
-                "content": "A history of humanity’s quest to reach space.",
+                "chapter": "16",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "1957: Launch of Sputnik 1.",
-                  "1969: Apollo 11 lands on the moon.",
-                  "Present: Private companies join space exploration."
-                ],
-                "image": "space_race.jpg"
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               },
               {
-                "title": "Chapter 2: Mars Exploration",
-                "content": "Current missions and plans for future human exploration of Mars.",
+                "chapter": "17",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "1976: Viking 1 lands on Mars.",
-                  "2004: Rovers Spirit and Opportunity land on Mars.",
-                  "Present: Ongoing Mars missions and future plans."
-                ],
-                "image": "mars.jpg"
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               },
               {
-                "title": "Chapter 3: The Future of Space Travel",
-                "content": "Looking ahead to new technologies and the possibility of interstellar travel.",
+                "chapter": "18",
+                "title": "Caim e Abel",
                 "timeline": [
-                  "Present: Development of reusable rockets.",
-                  "Future: Space tourism and colonization of planets.",
-                  "Far future: Possibility of interstellar travel."
-                ],
-                "image": "future_space_travel.jpg"
-              }
-            ],
-            "evaluation": {
-            "type": "quiz",
-            "questions": [
-              {
-                "question": "What is the capital of France?",
-                "alternatives": [
-                  "Buriticupu",
-                  "Madrid",
-                  "Paris",
-                  "Rome"
-                ],
-                "answer": 2
-              },
-              {
-                "question": "Which element has the atomic number 1?",
-                "alternatives": [
-                  "Oxygen",
-                  "Hydrogen",
-                  "Carbon",
-                  "Helium"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "What is the largest planet in our solar system?",
-                "alternatives": [
-                  "Earth",
-                  "Mars",
-                  "Jupiter",
-                  "Saturn"
-                ],
-                "answer": 2
-              },
-              {
-                "question": "Who wrote 'To Kill a Mockingbird'?",
-                "alternatives": [
-                  "Mark Twain",
-                  "Harper Lee",
-                  "Ernest Hemingway",
-                  "F. Scott Fitzgerald"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "Which country hosted the 2016 Summer Olympics?",
-                "alternatives": [
-                  "China",
-                  "Brazil",
-                  "Russia",
-                  "United Kingdom"
-                ],
-                "answer": 1
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "19",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "20",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
               }
             ]
-          }
+          },
+          {
+            "moduleTitle": "Módulo 5",
+            "chapters": [
+              {
+                "chapter": "16",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },
+              {
+                "chapter": "17",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },
+              {
+                "chapter": "18",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "1. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "19",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              },{
+                "chapter": "20",
+                "title": "Caim e Abel",
+                "timeline": [
+                  "Nebula formation: Birthplace of stars.",
+                  "Main sequence: Stable phase of a star.",
+                  "Supernova: The explosive death of a massive star."
+                ],                
+                "evaluation": {
+                  "type": "quiz",
+                  "questions": [
+                    {
+                      "question": "1. Pergunta 1'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 1."
+                    },
+                    {
+                      "question": "2. Pergunta 2'?",
+                      "alternatives": [
+                        "a) Resposta1.",
+                        "b) Resposta2.",
+                        "c) Resposta3.",
+                        "d) Resposta4.",
+                        "e) Resposta5."
+                      ],
+                      "answer": 3,
+                      "justificativa": "Justificativa da Resposta 2."
+                    }
+                  ]
+                }
+              }
+            ]
           }
         ]
       },

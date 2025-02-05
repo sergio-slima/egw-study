@@ -1,27 +1,50 @@
 .book-page-container {
-  display: flex;
-  /* flex-direction: row; */
+  display: flex;  
   /* height: 100vh; */
+  position: relative; /* Mantém a estrutura fixa */
 }
 
 .sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  z-index: 1000; /* Mantém o menu acima do conteúdo */
+
   width: 16rem;
   background-color: #171717;
-  transition: width 0.3s ease;
-  overflow: hidden;
-  height: 100vh;
+  /* transition: width 0.3s ease; */
+  overflow-y: auto; /* Adiciona rolagem vertical */
+  max-height: 100vh; /* Garante que o menu ocupe toda a altura */
+  scrollbar-width: thin; /* Para navegadores que suportam */
+  scrollbar-color: #4caf50 #171717; /* Cor da barra de rolagem */
+}
+
+/* Para navegadores baseados no WebKit (Chrome, Edge, Safari) */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #4caf50; /* Cor da barra de rolagem */
+  border-radius: 4px;
 }
 
 .sidebar.closed {
   width: 0px;
   padding: 0px;
+  transform: translateX(-100%);
 }
 
 .content {
   flex-grow: 1;
   padding: 20px;
   transition: all 0.3s ease;
-  margin-top: 100px;
   width: 100%;
 }
 
@@ -32,21 +55,37 @@
 .content-page {
   padding: 2rem;
   width: 100%;
-  background-color: #212121;
+  background-color: #f8f9fa; /* Fundo claro para leitura confortável */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+
+  flex-grow: 1;
+  position: relative;
+  z-index: 1; /* Mantém o conteúdo abaixo do menu */  
 }
 
 .toggle-menu {
   display: flex;
 }
 
+/* Botão para abrir e fechar o menu lateral */
 .toggle-menu-btn {
-  position: absolute;
-  padding: 5px;
-  margin: 5px;
-  background-color: #212121;
-  color: #fff;
+  position: fixed;
+  left: 16rem; /* Posição ao lado do menu quando aberto */
+  top: 20px;
+  background-color: #171717;
+  border: none;
+  padding: 10px;
   cursor: pointer;
+  z-index: 1100; /* Mantém o botão sempre visível */
+  transition: left 0.3s ease;
+  margin: 5px;
+  color: #fff;
+}
 
+/* Quando o menu está fechado, o botão fica na lateral da tela */
+.sidebar.closed + .toggle-menu-btn {
+  left: 10px; /* Posição fixa na lateral esquerda */
 }
 
 .logo-page img {
@@ -73,11 +112,17 @@
 .module-list {
   list-style: none;
   padding: 0 1rem;
+  overflow-y: auto;
+}
+
+.module-list ul {
+  padding-left: 1rem;
+  max-height: 100vh;
 }
 
 .module-list li {
   list-style: none;
-  padding: 2px;
+  padding: 5px;
   margin-left: 10px;
 }
 
@@ -134,11 +179,14 @@
 }
 
 .back-button {
+  position: fixed;
+  right: 2rem; 
   padding: 10px;
-  background-color: #ff3b3b;
+  background-color: #171717;
   color: #fff;
   cursor: pointer;
-  margin-top: 20px;
+  top: 20px;
+  margin: 5px;
 }
 
 .button-next {
@@ -146,8 +194,104 @@
   background-color: #4caf50;
   color: #fff;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 10px;
 }
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ######################################### */
+
+/* 🌟 Estilizando o nome do livro no topo */
+.book-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+/* 🌟 Nome do capítulo estilizado */
+.chapter-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 5px;
+}
+
+.chapter-subtitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #212121;
+  padding-bottom: 5px;
+}
+
+/* 🌟 Caixa de perguntas */
+.question-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+/* 🌟 Alternativas da avaliação */
+.question-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.question-box li {
+  margin: 10px 0;
+}
+
+.question-box input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* 🌟 Botão estilizado */
+.button-next, .submit-btn {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-next:hover, .submit-btn:hover {
+  background-color: #388e3c;
+}
+
+/* 🌟 Justificativa da resposta */
+.justification {
+  font-style: italic;
+  margin-top: 10px;
+  color: #777;
+}
+
+/* 🌟 Ajuste do texto destacado */
+.chapter-content span {
+  color: #4caf50;
+  font-weight: bold;
+}
+
 
 @media (max-width: 768px) {
   .sidebar {

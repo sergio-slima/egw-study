@@ -1,144 +1,94 @@
 import React, { useState, useEffect } from 'react';
-import data from './dados.json'; 
+import data from './dados.json';
 import { useParams } from 'react-router-dom';
-import { useUser } from "@clerk/clerk-react"; // Obtenha o ID do usuário a partir do Clerk
-
-import './BookPage.css'; 
+import './BookPage.css';
 
 import menuIcon from '../src/assets/menu.svg';
 import closeIcon from '../src/assets/close.svg';
-import logo from '../src/assets/logo.png'; 
+import HomeIcon from '../src/assets/home.svg';
+import logo from '../src/assets/logo.png';
 
 const BookPage = () => {
-  const { user } = useUser();
-  const userId = user ? user.id : null; // Obtenha o ID do usuário do Clerk
-
   const [isMenuOpen, setIsMenuOpen] = useState(true);
-  const [expandedModules, setExpandedModules] = useState({}); 
+  const [expandedModules, setExpandedModules] = useState({});
   const [selectedChapter, setSelectedChapter] = useState(null);
-  const [selectedEvaluation, setSelectedEvaluation] = useState(null);
   const [selectedAnswers, setSelectedAnswers] = useState({});
-  const [score, setScore] = useState(null);
-  const [completedChapters, setCompletedChapters] = useState({});
-  const [completedEvaluations, setCompletedEvaluations] = useState({});
-
-  const handleToggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleToggleModule = (moduleIndex) => {
-    setExpandedModules((prev) => ({
-      ...prev,
-      [moduleIndex]: !prev[moduleIndex],
-    }));
-  };
+  const [showResults, setShowResults] = useState({});
 
   const { id } = useParams();
   const [selectedBook, setSelectedBook] = useState(null);
 
   useEffect(() => {
-    if (!userId) return;
-
     const book = data.books.find(book => book.id === parseInt(id));
     if (book) {
       setSelectedBook(book);
     }
-    
-    const savedChapters = JSON.parse(localStorage.getItem(`${userId}-completedChapters`)) || {};
-    setCompletedChapters(savedChapters);
+  }, [id]);
 
-    const savedEvaluations = JSON.parse(localStorage.getItem(`${userId}-completedEvaluations`)) || {};
-    setCompletedEvaluations(savedEvaluations);
-  }, [id, userId]);
+  const handleToggleMenu = () => {
+    setIsMenuOpen(prevState => !prevState);//setIsMenuOpen(!isMenuOpen);
+  };
 
-  const handleChapterComplete = (modIndex, chapIndex) => {
-    if (!userId) return;
-
-    const updatedChapters = {
-      ...completedChapters,
-      [selectedBook.id]: {
-        ...completedChapters[selectedBook.id],
-        [`${modIndex}-${chapIndex}`]: true
-      }
-    };
-    setCompletedChapters(updatedChapters);
-    localStorage.setItem(`${userId}-completedChapters`, JSON.stringify(updatedChapters));
-  };  
-
-  const handleSubmitEvaluation = () => {
-    const evaluation = selectedBook.modules[selectedEvaluation].evaluation;
-    let correctAnswers = 0;
-
-    evaluation.questions.forEach((question, index) => {
-      if (question.answer === selectedAnswers[index]) {
-        correctAnswers += 1;
-      }
-    });
-
-    const totalScore = correctAnswers * 2;
-    setScore(totalScore);
-
-    if (totalScore >= 8 && userId) {
-      const updatedEvaluations = {
-        ...completedEvaluations,
-        [selectedBook.id]: {
-          ...completedEvaluations[selectedBook.id],
-          [selectedEvaluation]: totalScore
-        }
-      };
-      setCompletedEvaluations(updatedEvaluations);
-      localStorage.setItem(`${userId}-completedEvaluations`, JSON.stringify(updatedEvaluations));
-    }
+  const handleToggleModule = (moduleIndex) => {
+    setExpandedModules(prev => ({
+      ...prev,
+      [moduleIndex]: !prev[moduleIndex],
+    }));
   };
 
   const handleSelectChapter = (modIndex, chapIndex) => {
     setSelectedChapter({ moduleIndex: modIndex, chapterIndex: chapIndex });
-    setSelectedEvaluation(null); 
-  };
-
-  const handleSelectEvaluation = (modIndex) => {
-    setSelectedEvaluation(modIndex);
-    setSelectedChapter(null); 
+    setSelectedAnswers({});
+    setShowResults({});
   };
 
   const handleAnswerChange = (questionIndex, altIndex) => {
-    setSelectedAnswers((prev) => ({
+    setSelectedAnswers(prev => ({
       ...prev,
-      [questionIndex]: altIndex
+      [questionIndex]: altIndex,
     }));
   };
 
-  const handleRetryEvaluation = () => {
-    setSelectedAnswers({});
-    setScore(null);
+  const handleCheckAnswers = () => {
+    if (!selectedChapter) return;
+    
+    const { moduleIndex, chapterIndex } = selectedChapter;
+    const questions = selectedBook.modules[moduleIndex].chapters[chapterIndex].evaluation.questions;
+
+    const results = {};
+    questions.forEach((question, index) => {
+      results[index] = {
+        correct: question.answer === selectedAnswers[index],
+        justification: question.justificativa,
+      };
+    });
+
+    setShowResults(results);
   };
 
-  const handleNextChapterOrEvaluation = () => {
-    const { moduleIndex, chapterIndex } = selectedChapter;
-    handleChapterComplete(moduleIndex, chapterIndex);
+  // Função para formatar texto e destacar palavras entre *asteriscos*
+  const formatText = (text) => {
+    const parts = text.split(/(\*[^*]+\*)/);
 
-    const nextChapterIndex = chapterIndex + 1;
-
-    if (nextChapterIndex < selectedBook.modules[moduleIndex].chapters.length) {
-      setSelectedChapter({ moduleIndex, chapterIndex: nextChapterIndex });
-    } else {
-      handleSelectEvaluation(moduleIndex);
-    }
+    return parts.map((part, idx) => 
+      part.startsWith("*") && part.endsWith("*") ? (
+        <span key={idx} style={{ color: '#4caf50' }}>
+          {part.slice(1, -1)}
+        </span>
+      ) : (
+        part
+      )
+    );
   };
 
   if (!selectedBook) return <div>Carregando...</div>;
 
-  const evaluationCompleted = completedEvaluations[selectedBook.id]?.[selectedEvaluation];
-
   return (
-    <div className="book-page-container">
+    <div className="book-page-container">      
+
       <div className={`sidebar ${isMenuOpen ? 'open' : 'closed'}`}>
-        <div className='toggle-menu'>
-          <div className="logo-page"><img src={logo} alt="Logo" /></div>
-          
-          <button className="toggle-menu-btn" onClick={handleToggleMenu}>
-            {isMenuOpen ? <img src={closeIcon} alt="Fechar Menu" /> : <img src={menuIcon} alt="Abrir Menu" />}
-          </button>
+        <div className="toggle-menu">
+          <div className="logo-page"><img src={logo} alt="Logo" /></div>          
         </div>
 
         <aside className="module-list">
@@ -151,135 +101,78 @@ const BookPage = () => {
               {expandedModules[modIndex] && (
                 <ul>
                   {mod.chapters.map((chap, chapIndex) => (
-                    <li key={chapIndex}>
-                      <label>
-                        <input 
-                          type="checkbox"
-                          checked={!!completedChapters[selectedBook.id]?.[`${modIndex}-${chapIndex}`]}
-                          onChange={() => handleChapterComplete(modIndex, chapIndex)}
-                        />                        
-                      </label>
-                      <button className='button-chapter' onClick={() => handleSelectChapter(modIndex, chapIndex)}>
-                        {`Capítulo ${chapIndex + 1}`}
-                      </button>
+                    <li key={chapIndex} onClick={() => handleSelectChapter(modIndex, chapIndex)}>
+                      {`Capítulo ${chap.chapter}`}
                     </li>
                   ))}
-                  <li className='list-evaluation' onClick={() => handleSelectEvaluation(modIndex)}>
-                    📝Avaliação
-                  </li>
                 </ul>
               )}
             </div>
           ))}
-        </aside>
-
-        <div className="bottom-buttons">
-          <button className="back-button" onClick={() => window.history.back()}>
-            Voltar
-          </button>
-        </div>
+        </aside>        
       </div>
 
-      <main className={` content-page ${isMenuOpen ? '' : 'expanded'}`}>
-        {selectedChapter ? (
+      <button className="toggle-menu-btn" onClick={handleToggleMenu}>
+        {isMenuOpen ? <img src={closeIcon} alt="Fechar Menu" /> : <img src={menuIcon} alt="Abrir Menu" />}
+      </button>          
+
+      <main className={`content-page ${isMenuOpen ? '' : 'expanded'}`}>
+        <div className="bottom-buttons">
+          <button className="back-button" onClick={() => window.history.back()}><img src={HomeIcon} alt="Abrir Menu" /></button>
+        </div> 
+        
+        <div className="book-title">{selectedBook.book}</div>         
+
+        {selectedChapter ? (          
           <div className="chapter-content">
-            <h1>{selectedBook.book}</h1>
-            <br/>
-            <h2>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].title}</h2>
-            <br/>
-            {/* <p>{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].content}</p>
-            <a
-              href={selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].image}
-              alt="Chapter"
-              target='_black'
-            >LEIA O CAPITULO 1 AQUI</a> */}
+            <h3 className="chapter-subtitle">Capítulo: {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].chapter}</h3>
+            <h2 className="chapter-title">{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].title}</h2>
             <ul>
               {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].timeline.map((event, eventIndex) => (
                 <li key={eventIndex} style={eventIndex === 2 ? { fontStyle: 'italic' } : {}}>
                   {/^https?:\/\/.*\.(jpg|jpeg|png|gif)$/i.test(event) ? (
-                    // Renderiza a URL como uma imagem se for uma URL de imagem válida
-                    <img src={event} alt="Imagem" style={{ maxWidth: '100%', borderRadius: '8px' }} />
+                    <img src={event} alt="Imagem" className="chapter-image" />
                   ) : (
-                    // Caso contrário, processa o texto com destaque e quebras de linha
-                    event.split('\n').map((text, i) => {
-                      const parts = text.split(/(\*[^*]+\*)/);
-
-                      return (
-                        <React.Fragment key={i}>
-                          {parts.map((part, idx) =>
-                            part.startsWith("*") && part.endsWith("*") ? (
-                              <span key={idx} style={{ color: '#4caf50' }}>
-                                {part.slice(1, -1)}
-                              </span>
-                            ) : (
-                              part
-                            )
-                          )}
-                          <br />
-                        </React.Fragment>
-                      );
-                    })
+                    formatText(event) // Aplica a formatação de texto para palavras entre *
                   )}
                 </li>
               ))}
             </ul>
 
-
-
-            {selectedChapter.chapterIndex === selectedBook.modules[selectedChapter.moduleIndex].chapters.length - 1 ? (
-              <button className='button-next' onClick={handleNextChapterOrEvaluation}>Realizar Avaliação</button>
-            ) : (
-              <button className='button-next' onClick={handleNextChapterOrEvaluation}>Próximo Capítulo</button>
-            )}
-          </div>
-        ) : selectedEvaluation !== null ? (
-          <div className="evaluation-content">
-            <h2>Avaliação</h2>
-            {evaluationCompleted ? (
-              <p>Avaliação concluída com {evaluationCompleted} pontos.</p>
-            ) : (
-              <>
-                {selectedBook.modules[selectedEvaluation].evaluation.questions.map((question, index) => (
-                  <div key={index} className="question">
-                    <p>{question.question}</p>
-                    <ul>
-                      {question.alternatives.map((alt, altIndex) => (
-                        <li key={altIndex}>
-                          <label>
-                            <input
-                              type="radio"
-                              name={`question-${index}`}
-                              value={altIndex}
-                              checked={selectedAnswers[index] === altIndex}
-                              onChange={() => handleAnswerChange(index, altIndex)}
-                            />
-                            {alt}
-                          </label>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-
-                <button onClick={handleSubmitEvaluation}>Concluir Avaliação</button>
-                {score !== null && (
-                  <div className="result">
-                    <h3>Resultado: {score} pontos</h3>
-                    {score >= 8 ? (
-                      <p>Você foi aprovado!</p>
-                    ) : (
-                      <>
-                        <p>Você foi reprovado!</p>
-                        <button onClick={handleRetryEvaluation}>Refazer Avaliação</button>
-                      </>
-                    )}
-                  </div>
+            <h3 className="chapter-title">Avaliação</h3>
+            {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].evaluation.questions.map((question, index) => (
+              <div key={index} className="question question-box">
+                <p>{question.question}</p>
+                <ul>
+                  {question.alternatives.map((alt, altIndex) => (
+                    <li key={altIndex}>
+                      <label>
+                        <input
+                          type="radio"
+                          name={`question-${index}`}
+                          value={altIndex}
+                          checked={selectedAnswers[index] === altIndex}
+                          onChange={() => handleAnswerChange(index, altIndex)}
+                        />
+                        {alt}
+                      </label>
+                    </li>
+                  ))}
+                </ul>
+                {showResults[index] !== undefined && (
+                  <p className={showResults[index].correct ? "correct-answer" : "wrong-answer"} >
+                    {showResults[index].correct ? "✅ Resposta correta!" : "❌ Resposta errada!"}
+                    <br />
+                    <strong>Justificativa:</strong> {showResults[index].justification}
+                  </p>
                 )}
-              </>
-            )}
+              </div>
+            ))}
+
+            <button className="button-next" onClick={handleCheckAnswers}>Verificar respostas</button>
           </div>
         ) : (
-          <p>Selecione um capítulo ou uma avaliação.</p>
+          <p>Selecione um capítulo.</p>
         )}
       </main>
     </div>
