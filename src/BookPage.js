@@ -5,11 +5,12 @@ import './BookPage.css';
 
 import menuIcon from '../src/assets/menu.svg';
 import closeIcon from '../src/assets/close.svg';
-import HomeIcon from '../src/assets/home.svg';
+import homeIcon from '../src/assets/home.svg';
+import upArrow from '../src/assets/up-arrow.svg';
 import logo from '../src/assets/logo.png';
 
 const BookPage = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [expandedModules, setExpandedModules] = useState({});
   const [selectedChapter, setSelectedChapter] = useState(null);
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -22,11 +23,12 @@ const BookPage = () => {
     const book = data.books.find(book => book.id === parseInt(id));
     if (book) {
       setSelectedBook(book);
+      setSelectedChapter({ moduleIndex: 0, chapterIndex: 0 });
     }
   }, [id]);
 
   const handleToggleMenu = () => {
-    setIsMenuOpen(prevState => !prevState);//setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(prev => !prev);
   };
 
   const handleToggleModule = (moduleIndex) => {
@@ -40,6 +42,7 @@ const BookPage = () => {
     setSelectedChapter({ moduleIndex: modIndex, chapterIndex: chapIndex });
     setSelectedAnswers({});
     setShowResults({});
+    setIsMenuOpen(false);
   };
 
   const handleAnswerChange = (questionIndex, altIndex) => {
@@ -51,7 +54,7 @@ const BookPage = () => {
 
   const handleCheckAnswers = () => {
     if (!selectedChapter) return;
-    
+
     const { moduleIndex, chapterIndex } = selectedChapter;
     const questions = selectedBook.modules[moduleIndex].chapters[chapterIndex].evaluation.questions;
 
@@ -66,32 +69,33 @@ const BookPage = () => {
     setShowResults(results);
   };
 
-  // Função para formatar texto e destacar palavras entre *asteriscos*
-  const formatText = (text) => {
-    const parts = text.split(/(\*[^*]+\*)/);
-
-    return parts.map((part, idx) => 
-      part.startsWith("*") && part.endsWith("*") ? (
-        <span key={idx} style={{ color: '#4caf50' }}>
-          {part.slice(1, -1)}
-        </span>
-      ) : (
-        part
-      )
-    );
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   if (!selectedBook) return <div>Carregando...</div>;
 
   return (
-    <div className="book-page-container">      
+    <div className="book-page-container">
+      
+      {/* Barra de menu no topo */}
+      <div className="top-menu">
+        <button className="toggle-menu-btn" onClick={handleToggleMenu}>
+          <img src={isMenuOpen ? closeIcon : menuIcon} alt="Menu" />
+        </button>
+        <button className="home-button" onClick={() => window.history.back()}>
+          <img src={homeIcon} alt="Voltar" />
+        </button>
+      </div>
 
+      {/* Menu lateral abaixo da barra de menu */}
       <div className={`sidebar ${isMenuOpen ? 'open' : 'closed'}`}>
-        <div className="toggle-menu">
-          <div className="logo-page"><img src={logo} alt="Logo" /></div>          
+        {/* Logo no topo do menu lateral */}
+        <div className="sidebar-logo">
+          <img src={logo} alt="Logo" />
         </div>
 
-        <aside className="module-list">
+        <div className="module-list">
           {selectedBook.modules.map((mod, modIndex) => (
             <div key={modIndex}>
               <h3 onClick={() => handleToggleModule(modIndex)}>
@@ -109,39 +113,32 @@ const BookPage = () => {
               )}
             </div>
           ))}
-        </aside>        
+        </div>
       </div>
 
-      <button className="toggle-menu-btn" onClick={handleToggleMenu}>
-        {isMenuOpen ? <img src={closeIcon} alt="Fechar Menu" /> : <img src={menuIcon} alt="Abrir Menu" />}
-      </button>          
-
-      <main className={`content-page ${isMenuOpen ? '' : 'expanded'}`}>
-        <div className="bottom-buttons">
-          <button className="back-button" onClick={() => window.history.back()}><img src={HomeIcon} alt="Abrir Menu" /></button>
-        </div> 
-        
-        <div className="book-title">{selectedBook.book}</div>         
-
-        {selectedChapter ? (          
+      {/* Conteúdo */}
+      <main className="content-page">
+        {selectedChapter && (
           <div className="chapter-content">
+            <h2 className="book-title">{selectedBook.book}</h2> 
             <h3 className="chapter-subtitle">Capítulo: {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].chapter}</h3>
             <h2 className="chapter-title">{selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].title}</h2>
             <ul>
               {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].timeline.map((event, eventIndex) => (
-                <li key={eventIndex} style={eventIndex === 2 ? { fontStyle: 'italic' } : {}}>
-                  {/^https?:\/\/.*\.(jpg|jpeg|png|gif)$/i.test(event) ? (
-                    <img src={event} alt="Imagem" className="chapter-image" />
+                <li key={eventIndex}>
+                  {/\.jpg|\.jpeg|\.png|\.gif$/i.test(event) ? (
+                    <img src={event} alt="Imagem do capítulo" className="chapter-image" />
                   ) : (
-                    formatText(event) // Aplica a formatação de texto para palavras entre *
+                    event
                   )}
                 </li>
               ))}
             </ul>
 
+            {/* Avaliação */}
             <h3 className="chapter-title">Avaliação</h3>
             {selectedBook.modules[selectedChapter.moduleIndex].chapters[selectedChapter.chapterIndex].evaluation.questions.map((question, index) => (
-              <div key={index} className="question question-box">
+              <div key={index} className="question-box">
                 <p>{question.question}</p>
                 <ul>
                   {question.alternatives.map((alt, altIndex) => (
@@ -159,8 +156,8 @@ const BookPage = () => {
                     </li>
                   ))}
                 </ul>
-                {showResults[index] !== undefined && (
-                  <p className={showResults[index].correct ? "correct-answer" : "wrong-answer"} >
+                {showResults[index] && (
+                  <p className={showResults[index].correct ? "correct-answer" : "wrong-answer"}>
                     {showResults[index].correct ? "✅ Resposta correta!" : "❌ Resposta errada!"}
                     <br />
                     <strong>Justificativa:</strong> {showResults[index].justification}
@@ -170,9 +167,10 @@ const BookPage = () => {
             ))}
 
             <button className="button-next" onClick={handleCheckAnswers}>Verificar respostas</button>
+            <button className="back-to-top" onClick={handleScrollToTop}>
+              <img src={upArrow} alt="Topo" />
+            </button>
           </div>
-        ) : (
-          <p>Selecione um capítulo.</p>
         )}
       </main>
     </div>

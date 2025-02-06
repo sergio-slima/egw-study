@@ -7,8 +7,8 @@
 .sidebar {
   position: absolute;
   left: 0;
-  top: 0;
-  height: 100vh;
+  top: 50px;
+  height: calc(100vh - 50px); 
   transition: transform 0.3s ease;
   z-index: 1000; /* Mantém o menu acima do conteúdo */
 
@@ -53,11 +53,14 @@
 }
 
 .content-page {
-  padding: 2rem;
+  /* padding: 2rem; */
   width: 100%;
   background-color: #f8f9fa; /* Fundo claro para leitura confortável */
   color: #333;
   font-family: 'Arial', sans-serif;
+
+  margin-top: 60px; /* Para não ficar sob a barra de menu */
+  padding: 20px;
 
   flex-grow: 1;
   position: relative;
@@ -70,9 +73,9 @@
 
 /* Botão para abrir e fechar o menu lateral */
 .toggle-menu-btn {
-  position: fixed;
-  left: 16rem; /* Posição ao lado do menu quando aberto */
-  top: 20px;
+  position: absolute;
+  left: 0; /* Posição ao lado do menu quando aberto */
+  top: 0px;
   background-color: #171717;
   border: none;
   padding: 10px;
@@ -124,6 +127,7 @@
   list-style: none;
   padding: 5px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .button-chapter {
@@ -179,13 +183,12 @@
 }
 
 .back-button {
-  position: fixed;
-  right: 2rem; 
+  position: absolute;
   padding: 10px;
   background-color: #171717;
   color: #fff;
   cursor: pointer;
-  top: 20px;
+  top: 0px;
   margin: 5px;
 }
 
@@ -292,6 +295,57 @@ button {
   font-weight: bold;
 }
 
+/* Barra de menu fixa no topo */
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171717;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.top-menu h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Botão fixo para voltar ao topo */
+.back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.back-to-top img {
+  width: 24px;
+  height: 24px;
+}
+
+.toggle-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto; /* Empurra para o canto direito */
+}
+
+/* 🌟 O menu lateral começa abaixo da barra de menu */
+.sidebar {
+  position: absolute;
+  top: 50px; /* Alinhado abaixo da barra de menu */
+  left: 0;
+}
 
 @media (max-width: 768px) {
   .sidebar {
