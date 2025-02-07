@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from './dados.json';
 import { useParams } from 'react-router-dom';
+import { useUser } from "@clerk/clerk-react"; 
 import './BookPage.css';
 
 import menuIcon from '../src/assets/menu.svg';
@@ -10,6 +11,9 @@ import upArrow from '../src/assets/up-arrow.svg';
 import logo from '../src/assets/logo.png';
 
 const BookPage = () => {
+  const { user } = useUser();
+  const userId = user ? user.id : null; // ID único do usuário logado
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [expandedModules, setExpandedModules] = useState({});
   const [selectedChapter, setSelectedChapter] = useState(null);
@@ -25,6 +29,8 @@ const BookPage = () => {
   const [selectedBook, setSelectedBook] = useState(null);
 
   useEffect(() => {
+    if (!userId) return;
+
     const book = data.books.find(book => book.id === parseInt(id));
     if (book) {
       setSelectedBook(book);
@@ -32,15 +38,15 @@ const BookPage = () => {
     }
 
     // Carregar tamanho da fonte do localStorage
-    const savedFontSize = localStorage.getItem("fontSize");
+    const savedFontSize = localStorage.getItem(`${userId}-fontSize`);
     if (savedFontSize) {
       setFontSize(parseInt(savedFontSize, 10));
     }
 
     // Carregar progresso do localStorage
-    const savedProgress = JSON.parse(localStorage.getItem("completedChapters")) || {};
-    setCompletedChapters(savedProgress);
-  }, [id]);
+    const savedProgress = JSON.parse(localStorage.getItem(`${userId}-completedChapters`)) || {};
+      setCompletedChapters(savedProgress);
+    }, [id, userId]);
 
   useEffect(() => {
     let interval;
@@ -78,7 +84,7 @@ const BookPage = () => {
     setFontSize(prevSize => {
       const newSize = prevSize + change;
       if (newSize >= 12 && newSize <= 24) {
-        localStorage.setItem("fontSize", newSize);
+        localStorage.setItem(`${userId}-fontSize`, newSize);
         return newSize;
       }
       return prevSize;
@@ -111,13 +117,14 @@ const BookPage = () => {
 
     // Marcar o capítulo como concluído no localStorage
     const updatedChapters = { ...completedChapters };
-    if (!updatedChapters[selectedBook.id]) {
-      updatedChapters[selectedBook.id] = {};
-    }
-    updatedChapters[selectedBook.id][`${moduleIndex}-${chapterIndex}`] = true;
-    setCompletedChapters(updatedChapters);
-    localStorage.setItem("completedChapters", JSON.stringify(updatedChapters));
-  };
+      if (!updatedChapters[userId]) {
+        updatedChapters[userId] = {};
+      }
+      updatedChapters[userId][`${selectedBook.id}-${moduleIndex}-${chapterIndex}`] = true;
+
+      setCompletedChapters(updatedChapters);
+      localStorage.setItem(`${userId}-completedChapters`, JSON.stringify(updatedChapters));
+    };
 
   const handleStartEvaluation = () => {
     const confirmEvaluation = window.confirm("Você tem 10 minutos para concluir a avaliação. Deseja iniciar agora?");
@@ -180,7 +187,7 @@ const BookPage = () => {
                     <li key={chapIndex} onClick={() => handleSelectChapter(modIndex, chapIndex)}>
                       <input 
                         type="checkbox"
-                        checked={!!completedChapters[selectedBook.id]?.[`${modIndex}-${chapIndex}`]} 
+                        checked={!!completedChapters[userId]?.[`${selectedBook.id}-${modIndex}-${chapIndex}`]}
                         // disabled
                       />
                       {`Capítulo ${chap.chapter}`}
@@ -220,7 +227,7 @@ const BookPage = () => {
             )}
 
             {/* Avaliação (só aparece depois de clicar em "Realizar Avaliação") */}
-            {showEvaluation && (
+            {showEvaluation || completedChapters[userId]?.[`${selectedBook.id}-${selectedChapter.moduleIndex}-${selectedChapter.chapterIndex}`] ? (
               <>
                 <h3 className="chapter-title">Avaliação</h3>
                 <p className="timer">Tempo restante: {Math.floor(timer / 60)}:{(timer % 60).toString().padStart(2, '0')}</p>
@@ -254,7 +261,7 @@ const BookPage = () => {
                 ))}
                 <button className="button-next" onClick={handleCheckAnswers}>Verificar respostas</button>
               </>
-            )}
+            ): null}
 
             <button className="back-to-top" onClick={handleScrollToTop}>
               <img src={upArrow} alt="Topo" />
